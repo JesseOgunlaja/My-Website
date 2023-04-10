@@ -8,6 +8,7 @@ const about = () => {
       <div className={styles.aboutMe}>
         <h1 className={styles.title}>About Me</h1>
         <div className={styles.paragraph}>
+          <div className={styles.text}>
           I started coding in year 3, but all I did was scratch. It was a good
           introduction for me as it taught me basic programming principles such
           as variables and so on. After a bit, I moved on to C++ which is
@@ -27,6 +28,7 @@ const about = () => {
           variables allowing type safety and improved IntelliSense. Next JS
           allows you to easily create page routes and is what I’m using to make
           this website.
+          </div>
         </div>
         <div className={styles.imageContainer}>
           <img className={styles.image} src="/image.png" />
