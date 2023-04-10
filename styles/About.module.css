@@ -34,7 +34,7 @@
 
 @keyframes moveImage {
   from {
-    transform: translate(100vw, -30vh);
+    transform: translate(100vw, -25vh);
   }
   to {
     transform: translate(50vw, -25vh);
