@@ -5,7 +5,7 @@
 }
 
 .text {
-  font-size: 115%;
+  font-size: 2.35vh;
 }
 
 .title {
@@ -25,34 +25,30 @@
 }
 
 .image {
-  display: inline;
   height: 50vw;
   width: 50vw;
-  transform: translate(100vw, -200px);
+  opacity: 0;
   animation: moveImage 1s ease-in-out 1s 1 forwards;
-}
-
-.imageContainer {
-  height: 100vh;
-  width: 50vw;
-  display: flex;
-  justify-content: center;
 }
 
 @keyframes moveParagraph {
   from {
     transform: translateY(125vh);
+    opacity: 0;
   }
   to {
     transform: translateY(42.5vh);
+    opacity: 1;
   }
 }
 
 @keyframes moveImage {
   from {
-    transform: translate(100vw, -25vh);
+    transform: translate(100vw, -30vh);
+    opacity: 0;
   }
   to {
-    transform: translate(50vw, -25vh);
+    transform: translate(50vw, -30vh);
+    opacity: 1;
   }
 }
