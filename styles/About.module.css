@@ -1,6 +1,7 @@
 .paragraph {
   font-size: 1.1rem;
   animation: moveParagraph 1s ease-in-out 0s 1 forwards;
+  width: 50vw;
 }
 
 .title {
@@ -11,10 +12,12 @@
 }
 
 .aboutMe {
-  width: 50vw;
+  width: 100vw;
+  height: 100vh;
   padding: 15px;
   display: flex;
   flex-direction: column;
+  transform: translateY(-25vh);
 }
 
 .image {
@@ -23,6 +26,17 @@
   width: 50vw;
   transform: translate(100vw, -200px);
   animation: moveImage 1s ease-in-out 1s 1 forwards;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 @keyframes moveParagraph {
