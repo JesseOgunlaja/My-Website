@@ -12,7 +12,7 @@ const projects = () => {
             <Link className={styles.link} href={"/memoryGame"}>
           <div className={styles.game}>
               Memory Game
-            <img className={styles.img} src="/memoryGame.png" />
+            <img className={styles.img} src="/memory.png" />
           </div>
             </Link>
           <Link className={styles.link} href={"/ticTacToe"}>
