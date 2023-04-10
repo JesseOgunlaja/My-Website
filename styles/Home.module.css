@@ -1,0 +1,138 @@
+.info {
+  opacity: 0;
+  animation: moveInfo 0.75s ease-in-out 0.75s 1 forwards;
+}
+
+.hi {
+  width: 70px;
+  height: 40px;
+  background: rgb(0, 140, 255);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 17.5px;
+  border-radius: 20px 20px 20px 0px;
+}
+
+.name {
+  font-size: 60px;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.language {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+.actualLogo {
+  transform: translate(65vw, -50px);
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  padding: 50px;
+  box-shadow: -10px -10px 50px 0 rgb(0, 140, 255),
+    10px 10px 50px rgb(255, 140, 255);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  animation: moveLogo 0.75s ease-in-out 1;
+}
+
+.logoTitle {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.languageLogos {
+  display: flex;
+  gap: 25px;
+}
+
+#faGradient {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.email,.github {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.email div,.github div {
+  display: inline;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes blink {
+  from {
+    color: white;
+  }
+  to {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes moveInfo {
+  from {
+    opacity: 0;
+    transform: translate(50px, 50vw);
+  }
+  to {
+    opacity: 1;
+    transform: translate(50px, 175px);
+  }
+}
+
+@keyframes moveLogo {
+  from {
+    opacity: 0;
+    transform: translate(65vw, 50vw);
+  }
+  to {
+    opacity: 1;
+    transform: translate(65vw, -50px);
+  }
+}
