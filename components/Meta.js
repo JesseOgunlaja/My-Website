@@ -9,16 +9,15 @@ const Meta = ({ title, keywords, description }) => {
       <meta name="keywords" content={keywords}></meta>
       <meta name="description" content={description}></meta>
       <link rel="icon" href="/icon.png" />
-
     </Head>
   );
 };
 
 Meta.defaultProps = {
-    title: "Jesse Ogunlaja",
-    keywords: "web development, HTML, CSS, JavaScript, React, Next JS",
-    description:
-      "A page about Jesse Ogunlaja",
-  };
+  title: "Jesse Ogunlaja",
+  keywords:
+    "web development, HTML, CSS, JavaScript, React, Next JS, Jesse Ogunlaja's website, Jesse's website, ogunjx's website",
+  description: "A page about Jesse Ogunlaja",
+};
 
 export default Meta;

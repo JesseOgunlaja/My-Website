@@ -448,7 +448,7 @@ function App() {
       {resultReached !== "nothing" && (
         <div className="playAgain">
           <p className="playAgainParagraph">
-            Player {go === 1 ? 2 : 1} {resultReached}
+            Player {go === 1 ? 1 : 2} {resultReached === "loses" ? "wins" : "loses"}
           </p>
           <button className="playAgainButton" onClick={() => playAgain()}>
             Play again
@@ -493,7 +493,7 @@ function App() {
                     : "letter hiding"
                 }
               >
-                {character.showing ? character.letter : "X"}
+                {character.red ? character.letter : character.showing ? character.letter : "X"}
               </div>
             ))}
           </div>

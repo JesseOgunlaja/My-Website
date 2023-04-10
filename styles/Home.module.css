@@ -45,7 +45,6 @@
 }
 
 .actualLogo {
-  transform: translate(65vw, -50px);
   text-align: center;
   width: 350px;
   height: 350px;
@@ -56,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  animation: moveLogo 0.75s ease-in-out 1;
+  animation: moveLogo 0.75s ease-in-out 1 forwards;
 }
 
 .logoTitle {
@@ -129,10 +128,10 @@
 @keyframes moveLogo {
   from {
     opacity: 0;
-    transform: translate(65vw, 50vw);
+    transform: translate(calc(100vw - 400px), 50vw);
   }
   to {
     opacity: 1;
-    transform: translate(65vw, -50px);
+    transform: translate(calc(100vw - 400px), -50px);
   }
 }

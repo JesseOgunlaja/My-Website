@@ -1,23 +1,54 @@
-import Link from "next/link"
-import styles from '@/styles/Projects.module.css'
-import Meta from "@/components/Meta"
+import Link from "next/link";
+import styles from "@/styles/Projects.module.css";
+import Meta from "@/components/Meta";
 
 const projects = () => {
   return (
     <div>
-      <Meta title="My Projects"/>
+      <style jsx>{``}</style>
+      <Meta title="My Projects" />
       <div className={styles.container}>
-      <div className={styles.links}>
-        <Link className={styles.link} href={'/memoryGame'}>Memory Game</Link>
-        <Link className={styles.link} href={'/ticTacToe'}>Tic Tac Toe</Link>
-        <Link className={styles.link} href={'/calculator'}>Calculator</Link>
-        <Link className={styles.link} href={'/quizGame'}>Quiz Game</Link>
-        <Link className={styles.link} href={'/rockPaperScissors'}>Rock Paper Scissors</Link>
-        <Link className={styles.link} href={'/hangman'}>Hangman</Link>
-      </div>
+        <div className={styles.links}>
+            <Link className={styles.link} href={"/memoryGame"}>
+          <div className={styles.game}>
+              Memory Game
+          </div>
+            <img className={styles.img} src="/memoryGame.png" />
+            </Link>
+          <Link className={styles.link} href={"/ticTacToe"}>
+          <div className={styles.game}>
+            Tic Tac Toe
+          <img className={styles.img} src="/ticTacToe.png"/>
+          </div>
+          </Link>
+          <Link className={styles.link} href={"/calculator"}>
+          <div className={styles.game}>
+            Calculator
+          <img className={styles.img} src="/calculator.png"/>
+          </div>
+          </Link>
+          <Link className={styles.link} href={"/quizGame"}>
+          <div className={styles.game}>
+            Quiz Game
+          </div>
+          <img className={[`${styles.game} ${styles.quizGame}`]} src="/quiz.png"/>
+          </Link>
+          <Link className={styles.link} href={"/rockPaperScissors"}>
+          <div className={styles.game}>
+            Rock Paper Scissors
+          <img className={styles.img} src="/rps.png"/>
+          </div>
+          </Link>
+          <Link className={styles.link} href={"/hangman"}>
+          <div className={styles.game}>
+            Hangman
+          <img className={styles.img} src="/hangman.png"/>
+          </div>
+          </Link>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default projects
+export default projects;

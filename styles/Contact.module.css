@@ -70,6 +70,10 @@
   box-shadow: 0px 0px 0px 5px rgb(0, 140, 255);
 }
 
+.firstname::placeholder,.lastname::placeholder,.message::placeholder,.email::placeholder {
+  color: white;
+}
+
 @keyframes border {
   from {
     border-radius: 5px;

@@ -1,17 +1,33 @@
 .links {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  height: 250px;
+}
+
+.quizGame {
+  width: 362px;
+  height: 250px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -122,7 +122,7 @@ function App() {
               color:red;
             }
             #draw {
-              color:blue;
+              color:turquoise;
             }
             #draw,#lose,#win{
               font-weight:100;
