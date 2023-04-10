@@ -22,7 +22,7 @@
 
 .image {
   display: inline;
-  height: 80vh;
+  height: 50vw;
   width: 50vw;
   transform: translate(100vw, -200px);
   animation: moveImage 1s ease-in-out 1s 1 forwards;
