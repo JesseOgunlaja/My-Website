@@ -21,8 +21,12 @@
 }
 
 .quizGame {
-  width: 362px;
+  width: 341px;
   height: 250px;
+}
+
+.ticTacToe {
+    width: 285px;
 }
 
 .game {

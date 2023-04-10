@@ -16,7 +16,7 @@ const projects = () => {
           </div>
             </Link>
           <Link className={styles.link} href={"/ticTacToe"}>
-          <div className={styles.game}>
+          <div className={[`${styles.game} ${styles.ticTacToe}`]}>
             Tic Tac Toe
           <img className={styles.img} src="/ticTacToe.png"/>
           </div>
