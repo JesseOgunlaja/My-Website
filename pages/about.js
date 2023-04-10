@@ -28,9 +28,9 @@ const about = () => {
           allows you to easily create page routes and is what I’m using to make
           this website.
         </div>
-        {/* <div className={styles.imageContainer}> */}
+        <div className={styles.imageContainer}>
           <img className={styles.image} src="/image.png" />
-        {/* </div> */}
+        </div>
       </div>
     </div>
   );
