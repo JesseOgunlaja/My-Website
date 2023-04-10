@@ -12,33 +12,39 @@ export default function Home() {
   const languages = [
     "HTML",
     "CSS",
+    "SCSS",
     "JavaScript",
+    "TypeScript",
     "React JS",
     "Next JS",
-    "TypeScript",
   ];
 
   useEffect(() => {
     setTimeout(() => {
-      if (languageId === languages.length - 1) {
+      if (languageId === languages.length && text.length === 1 && deleting === false) {
         setLanguageId(0);
+        setStringId(1)
+        setText("")
       }
-      let currentText = languages[languageId].slice(0, stringId);
-      setText(currentText);
-      if (stringId < languages[languageId].length && deleting === false) {
-        setStringId(stringId + 1);
-      } else {
-        if (deleting === false) {
-          setIncrement(1000);
+      else {
+
+        let currentText = languages[languageId].slice(0, stringId);
+        setText(currentText);
+        if (stringId < languages[languageId].length && deleting === false) {
+          setStringId(stringId + 1);
         } else {
-          setIncrement(100);
-        }
-        setDeleting(true);
-        setStringId(stringId - 1);
-        if (stringId === 1) {
-          setLanguageId(languageId + 1);
-          setDeleting(false);
-        }
+          if (deleting === false) {
+            setIncrement(1000);
+          } else {
+            setIncrement(100);
+          }
+          setDeleting(true);
+          setStringId(stringId - 1);
+          if (stringId === 1) {
+            setLanguageId(languageId + 1);
+            setDeleting(false);
+          }
+      }
       }
     }, increment);
   }, [stringId]);
