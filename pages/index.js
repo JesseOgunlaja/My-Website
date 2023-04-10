@@ -49,6 +49,7 @@ export default function Home() {
       <Head>
       <script src="https://kit.fontawesome.com/b9c7cb7078.js" crossorigin="anonymous"></script>
       </Head>
+      <div className={styles.home}>
       <div className={styles.info}>
         <div className={styles.hi}>I'm</div>
         <div className={styles.name}>Jesse Ogunlaja</div>
@@ -74,6 +75,7 @@ export default function Home() {
           <i id={styles.faGradient} class="fa-solid fa-code fa-3x"></i>
           <i id={styles.faGradient} class="fa-brands fa-css3 fa-3x"></i>
         </div>
+      </div>
       </div>
     </>
   );

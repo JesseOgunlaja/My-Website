@@ -105,6 +105,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @keyframes blink {
   from {
     color: white;
@@ -117,21 +123,21 @@
 @keyframes moveInfo {
   from {
     opacity: 0;
-    transform: translate(50px, 50vw);
+    transform: translate(15vw, 50vw);
   }
   to {
     opacity: 1;
-    transform: translate(50px, 175px);
+    transform: translate(15vw, 175px);
   }
 }
 
 @keyframes moveLogo {
   from {
     opacity: 0;
-    transform: translate(calc(100vw - 400px), 50vw);
+    transform: translate(60vw, 50vw);
   }
   to {
     opacity: 1;
-    transform: translate(calc(100vw - 400px), -50px);
+    transform: translate(60vw, -50px);
   }
 }
