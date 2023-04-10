@@ -25,8 +25,8 @@
 }
 
 .image {
-  height: 50vw;
-  width: 50vw;
+  height: 650px;
+  width: 650px;
   opacity: 0;
   animation: moveImage 1s ease-in-out 1s 1 forwards;
 }
