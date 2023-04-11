@@ -64,7 +64,7 @@
       width: 0px;
     }
     .bar {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) translateX(-50px);
       margin-left: 10px;
       width: 50vw;
     }
@@ -88,6 +88,49 @@
     }
     .bar3 {
       width: 10px;
+    }
+    .true {
+      animation: slideNavOut 0.5s ease-in-out 0s 1 forwards;
+    }
+    .false {
+      animation: slideNavIn 0.5s ease-in-out 0s 1 forwards;
+    }
+    .sideNav {
+      transform: translateX(-100vw);
+    }
+    .sideNav, .phoneLinks {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      gap: 10px;
+      background: rgba(84,84,84,0.75);
+      height: 100vh;
+      width: 100vw;
+      z-index: 2;
+    }
+    .phoneLinks > * {
+      text-decoration: none;
+      color: inherit;
+      padding: 15px;
+    }
+  }
+
+  @keyframes slideNavOut {
+    from {
+      transform: translateX(-100vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideNavIn {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100vw);
     }
   }
   

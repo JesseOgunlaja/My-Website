@@ -1,8 +1,12 @@
 import Link from "next/link";
 import styles from "../styles/Nav.module.css";
+import { useState } from 'react'
 
 const Nav = () => {
+  const [navShwoing,setNavShowing] = useState("false")
+
   return (
+    <div>
     <nav className={styles.nav}>
       <ul>
         <li className={styles.name}>Jesse Ogunlaja</li>
@@ -21,7 +25,7 @@ const Nav = () => {
         </li>
         </div>
         <li className={styles.bar}>
-          <div className={styles.actualBar} onClick={() => console.log("hi")}>
+          <div className={styles.actualBar} onClick={() => navShwoing === "false" ? setNavShowing(true) : setNavShowing(!navShwoing)}>
           <hr className={styles.bar1}/>
           <hr className={styles.bar2}/>
           <hr className={styles.bar3}/>
@@ -29,6 +33,17 @@ const Nav = () => {
         </li>
       </ul>
     </nav>
+    {/* {navShwoing && ( */}
+      <div className={[`${styles.sideNav} ${navShwoing !== 'false' ? navShwoing ? styles.true : styles.false : null}`]}>
+        <div className={styles.phoneLinks}>
+          <Link href={"/"}>Home</Link>
+          <Link href={"/projects"}>My Projects</Link>
+          <Link href={"/about"}>About Me</Link>
+          <Link href={"/contact"}>Contact Me</Link>
+        </div>
+      </div>
+    {/* )} */}
+    </div>
   );
 };
 
