@@ -156,4 +156,7 @@
     transform: translate(15vw, 10vh);
     opacity: 1;
   }
+  .home {
+    transform: translateY(50px);
+  }
 }
