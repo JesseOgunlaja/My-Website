@@ -72,7 +72,7 @@
   .image {
     height: 500px;
     width: 500px;
-    transform: translateY(100vh);
+    transform: translateY(80vh);
     opacity: 1;
   }
   .title {
