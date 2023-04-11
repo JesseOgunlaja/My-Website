@@ -157,6 +157,6 @@
     opacity: 1;
   }
   .home {
-    transform: translateY(75px);
+    transform: translateY(100px);
   }
 }
