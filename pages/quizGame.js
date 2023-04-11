@@ -184,6 +184,12 @@ function App() {
             .answer {
                 margin-left: 5px;
             }
+
+            @media (orientation: portrait) {
+              .submit {
+                border-radius: 0px;
+              }
+            }
         `}</style>
       {index < amount ? (
         <form className="container" onSubmit={submit}>
