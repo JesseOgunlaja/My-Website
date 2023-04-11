@@ -448,7 +448,7 @@ function App() {
       {resultReached !== "nothing" && (
         <div className="playAgain">
           <p className="playAgainParagraph">
-            Player {go === 1 ? 1 : 2} {resultReached === "loses" ? "wins" : "loses"}
+            Player {go === 1 ? resultReached === "loses" ? "1 wins" : "2 wins" : resultReached === "loses" ? '2 wins' : "1 wins"}
           </p>
           <button className="playAgainButton" onClick={() => playAgain()}>
             Play again
