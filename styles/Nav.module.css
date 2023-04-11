@@ -1,9 +1,6 @@
 .nav {
     position: absolute;
-    display: flex;
-    justify-content: space-between;
     top: 0;
-    left: 0;
     background: #222;
     width: 100vw;
     border-bottom: 4px solid black;
@@ -47,8 +44,37 @@
   }
 
   @media (orientation: portrait) {
+    .name {
+      margin-right: 0;
+      margin-left: 0;
+    }
     .nav {
-      /* display: none; */
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .nav ul li a {
+      display: none;
+    }
+    .bar {
+      display: flex;
+      flex-direction: column;
+      transform: rotateY(180deg);
+      gap: 2.5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .bar1,.bar2,.bar3 {
+      height: 2.5px;
+      background: white;
+    }
+    .bar1 {
+      width: 25px;
+    }
+    .bar2 {
+      width: 17.5px;
+    }
+    .bar3 {
+      width: 10px;
     }
   }
   

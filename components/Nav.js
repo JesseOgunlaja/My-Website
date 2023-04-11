@@ -20,11 +20,11 @@ const Nav = () => {
           <Link href={"/contact"}>Contact Me</Link>
         </li>
         </div>
-        {/* <li> */}
-          {/* <hr/> */}
-          {/* <hr/> */}
-          {/* <hr/> */}
-        {/* </li> */}
+        <li className={styles.bar}>
+          <hr className={styles.bar1}/>
+          <hr className={styles.bar2}/>
+          <hr className={styles.bar3}/>
+        </li>
       </ul>
     </nav>
   );
