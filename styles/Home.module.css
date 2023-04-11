@@ -151,12 +151,13 @@
 @media (orientation: portrait) {
   .actualLogo {
     transform: translate(12.5vw, 15vh);
+    margin-bottom: 20px;
   }
   .info {
     transform: translate(15vw, 10vh);
     opacity: 1;
   }
   .home {
-    transform: translateY(80px);
+    transform: translateY(2.5vh);
   }
 }
