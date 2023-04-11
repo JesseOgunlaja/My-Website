@@ -161,6 +161,7 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 .playagain {
   padding: 10px;
   font-size: 25px;
@@ -326,5 +327,33 @@ button {
 @media (orientation: portrait) {
   .container {
     width: 80vw;
+  }
+  .endcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bigO {
+    transform: translate(35px,-120px);
+  }
+  .bigX {
+    transform: translateX(40px);
+  }
+  .winner {
+    transform: translate(35px,10px);
+  }
+  .playagain {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .text {
+    position: absolute;
+    left: 50vw;
+  }
+  .drawWinner {
+      margin-bottom: 10px;;
   }
 }

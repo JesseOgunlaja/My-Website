@@ -151,11 +151,14 @@ function App() {
                       <p className={styles.bigO}>O</p>
                     </div>
                   </div>
-                  <p className={[styles.winner, styles.drawWinner]}>Draw!</p>
+                  <p className={[`${styles.winner} ${styles.drawWinner}`]}>Draw!</p>
                 </div>
               )}
               <button className={styles.playagain} onClick={() => reset(true)}>
+                <div className={styles.text}>
+
                 Play again
+                </div>
               </button>
             </div>
           )}

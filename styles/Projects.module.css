@@ -6,7 +6,7 @@
 
 @media (orientation: portrait) {
   .links {
-    transform: translateY(150px);
+    transform: translateY(180px);
     grid-template-rows: repeat(3,auto);
     grid-template-columns: auto;
   }
