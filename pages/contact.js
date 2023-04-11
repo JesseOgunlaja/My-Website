@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 
 const contact = () => {
   const form = useRef();
-  const [submitted,setSubmitted] = useState(true)
+  const [submitted,setSubmitted] = useState(false)
 
   function submitForm(e) {
     e.preventDefault();
