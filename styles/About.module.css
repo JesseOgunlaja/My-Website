@@ -72,7 +72,7 @@
   .image {
     height: 500px;
     width: 500px;
-    top: calc(145vw + 300px);
+    top: calc(145vw - 300px);
     left: -15vw;
     opacity: 1;
   }
