@@ -322,3 +322,9 @@ button {
     width: 100px;
   }
 }
+
+@media (orientation: portrait) {
+  .container {
+    width: 80vw;
+  }
+}

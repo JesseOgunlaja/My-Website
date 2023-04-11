@@ -9,7 +9,7 @@ const projects = () => {
       <Meta title="My Projects" />
       <div className={styles.container}>
         <div className={styles.links}>
-            <Link className={styles.link} href={"/memoryGame"}>
+            <Link className={[`${styles.link} ${styles.hidden}`]} href={"/memoryGame"}>
           <div className={styles.game}>
               Memory Game
             <img className={styles.img} src="/memory.png" />
@@ -27,19 +27,19 @@ const projects = () => {
           <img className={styles.img} src="/calculator.png"/>
           </div>
           </Link>
-          <Link className={styles.link} href={"/quizGame"}>
+          <Link className={styles.link} style={{flexDirection: 'column'}} href={"/quizGame"}>
           <div className={styles.game}>
             Quiz Game
           </div>
           <img className={[`${styles.game} ${styles.quizGame}`]} src="/quiz.png"/>
           </Link>
-          <Link className={styles.link} href={"/rockPaperScissors"}>
+          <Link className={[`${styles.link} ${styles.hidden}`]} href={"/rockPaperScissors"}>
           <div className={styles.game}>
             Rock Paper Scissors
           <img className={styles.img} src="/rps.png"/>
           </div>
           </Link>
-          <Link className={styles.link} href={"/hangman"}>
+          <Link className={[`${styles.link} ${styles.hidden}`]} href={"/hangman"}>
           <div className={styles.game}>
             Hangman
           <img className={styles.img} src="/hangman.png"/>

@@ -99,4 +99,7 @@
   .firstname,.lastname {
     width: 200px
   }
+  .message {
+    margin-bottom: 10px;
+  }
 }

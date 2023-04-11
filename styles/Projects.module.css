@@ -4,6 +4,22 @@
   grid-gap: 10px;
 }
 
+@media (orientation: portrait) {
+  .links {
+    transform: translateY(150px);
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: auto;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -16,9 +32,9 @@
   justify-content: center;
 }
 
-.img {
-  height: 250px;
-}
+  .img {
+    height: 250px;
+  }
 
 .quizGame {
   width: 341px;
