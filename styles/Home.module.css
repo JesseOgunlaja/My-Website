@@ -106,7 +106,6 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 @keyframes blink {
@@ -151,15 +150,15 @@
 
 @media (orientation: portrait) {
   .actualLogo {
-    opacity: 0;
-    animation: moveLogoPhone 0.75s ease-in-out 0.75s 1 forwards;
+    /* opacity: 0; */
+    /* animation: moveLogoPhone 0.75s ease-in-out 0.75s 1 forwards; */
     transform: translate(12.5vw, 15vh);
 
   }
   .info {
-    animation: moveInfoPhone 0.75s ease-in-out 1 forwards;
+    /* animation: moveInfoPhone 0.75s ease-in-out 1 forwards; */
     transform: translate(15vw, 10vh);
-    opacity: 0;
+    opacity: 1;
   }
 }
 

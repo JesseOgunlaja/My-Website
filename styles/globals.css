@@ -22,11 +22,11 @@ textarea {
     resize: none;
 }
 
-/* @media (orientation: portrait) {
+@media (orientation: portrait) {
     body {
         overflow-x: hidden;
         overflow-y: visible;
     }
-  } */
+  }
 
 
