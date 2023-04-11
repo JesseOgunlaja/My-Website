@@ -163,21 +163,21 @@
 @keyframes moveInfoPhone {
   from {
     opacity: 0;
-    transform: translate(-15vw, 20vh);
+    transform: translate(-15vw, 10vh);
   }
   to {
     opacity: 1;
-    transform: translate(15vw, 20vh);
+    transform: translate(15vw, 10vh);
   }
 }
 
 @keyframes moveLogoPhone {
   from {
     opacity: 0;
-    transform: translate(60vw, 30vh);
+    transform: translate(60vw, 15vh);
   }
   to {
     opacity: 1;
-    transform: translate(12.5vw, 30vh);
+    transform: translate(12.5vw, 15vh);
   }
 }
