@@ -103,3 +103,9 @@
     margin-bottom: 10px;
   }
 }
+
+.endMessage {
+  font-size: 40px;
+  text-align: center;
+  width: 100vw;
+}

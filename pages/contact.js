@@ -1,13 +1,15 @@
 import Meta from "@/components/Meta";
 import styles from "@/styles/Contact.module.css";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const contact = () => {
   const form = useRef();
+  const [submitted,setSubmitted] = useState(true)
 
   function submitForm(e) {
     e.preventDefault();
+    setSubmitted(true)
 
     emailjs
       .sendForm(
@@ -29,6 +31,11 @@ const contact = () => {
   return (
     <div>
       <Meta title="Contact Me" />
+      {submitted ? (
+        <p className={styles.endMessage}>
+          Thanks for submitting this message
+        </p>
+      ) : (
       <div className={styles.container}>
         <h4 className={styles.contact}>Contact Me</h4>
         <form onSubmit={submitForm} ref={form} className={styles.form}>
@@ -63,6 +70,7 @@ const contact = () => {
           <input className={styles.submit} type="Submit" />
         </form>
       </div>
+      )}
     </div>
   );
 };
