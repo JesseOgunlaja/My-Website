@@ -150,36 +150,10 @@
 
 @media (orientation: portrait) {
   .actualLogo {
-    /* opacity: 0; */
-    /* animation: moveLogoPhone 0.75s ease-in-out 0.75s 1 forwards; */
     transform: translate(12.5vw, 15vh);
-
   }
   .info {
-    /* animation: moveInfoPhone 0.75s ease-in-out 1 forwards; */
     transform: translate(15vw, 10vh);
     opacity: 1;
-  }
-}
-
-@keyframes moveInfoPhone {
-  from {
-    opacity: 0;
-    transform: translate(-15vw, 10vh);
-  }
-  to {
-    opacity: 1;
-    transform: translate(15vw, 10vh);
-  }
-}
-
-@keyframes moveLogoPhone {
-  from {
-    opacity: 0;
-    transform: translate(60vw, 15vh);
-  }
-  to {
-    opacity: 1;
-    transform: translate(12.5vw, 15vh);
   }
 }

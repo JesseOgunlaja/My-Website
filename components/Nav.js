@@ -5,6 +5,8 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <ul>
+        <li className={styles.name}>Jesse Ogunlaja</li>
+        <div className={styles.links}>
         <li>
           <Link href={"/"}>Home</Link>
         </li>
@@ -17,6 +19,12 @@ const Nav = () => {
         <li>
           <Link href={"/contact"}>Contact Me</Link>
         </li>
+        </div>
+        {/* <li> */}
+          {/* <hr/> */}
+          {/* <hr/> */}
+          {/* <hr/> */}
+        {/* </li> */}
       </ul>
     </nav>
   );
