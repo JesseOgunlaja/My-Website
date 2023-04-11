@@ -67,16 +67,16 @@
 @media (orientation: portrait) {
   .paragraph {
     width: 100vw;
-    transform: translateY(200px);
+    transform: translateY(300px);
   }
   .image {
     height: 500px;
     width: 500px;
-    top: 132.5vh;
+    top: 145vh;
     left: -15vw;
     opacity: 1;
   }
   .title {
-    transform: translateY(200px);
+    transform: translateY(300px);
   }
 }
