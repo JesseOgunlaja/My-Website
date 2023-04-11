@@ -21,9 +21,11 @@ const Nav = () => {
         </li>
         </div>
         <li className={styles.bar}>
+          <div className={styles.actualBar} onClick={() => console.log("hi")}>
           <hr className={styles.bar1}/>
           <hr className={styles.bar2}/>
           <hr className={styles.bar3}/>
+          </div>
         </li>
       </ul>
     </nav>

@@ -64,17 +64,21 @@
       width: 0px;
     }
     .bar {
-      display: flex;
-      flex-direction: column;
       transform: rotateY(180deg);
-      gap: 2.5px;
-      cursor: pointer;
       margin-left: 10px;
       width: 50vw;
     }
     .bar1,.bar2,.bar3 {
       height: 2.5px;
       background: white;
+      cursor: pointer;
+    }
+    .actualBar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      width: 25px;
+      margin: 0;
     }
     .bar1 {
       width: 25px;
