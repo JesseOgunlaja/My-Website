@@ -158,6 +158,6 @@
     opacity: 1;
   }
   .home {
-    transform: translateY(2.5vh);
+    transform: translateY(20px);
   }
 }
