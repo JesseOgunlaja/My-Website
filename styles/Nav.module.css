@@ -47,6 +47,12 @@
   width: 50vw;
   }
 
+  @media (orientation: landscape) {
+    .sideNav {
+      display: none;
+    }
+  }
+
   @media (orientation: portrait) {
     .name {
       margin-right: 0;
