@@ -1,6 +1,5 @@
 .info {
   opacity: 0;
-  animation: moveInfo 0.75s ease-in-out 0.75s 1 forwards;
 }
 
 .hi {
@@ -55,7 +54,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  animation: moveLogo 0.75s ease-in-out 1 forwards;
 }
 
 .logoTitle {
@@ -139,5 +137,45 @@
   to {
     opacity: 1;
     transform: translate(60vw, -50px);
+  }
+}
+
+@media (orientation: landscape) {
+  .actualLogo {
+    animation: moveLogo 0.75s ease-in-out 1 forwards;
+  }
+  .info {
+    animation: moveInfo 0.75s ease-in-out 0.75s 1 forwards;
+  }
+}
+
+@media (orientation: portrait) {
+  .actualLogo {
+    animation: moveLogoPhone 0.75s ease-in-out 1 forwards;
+  }
+  .info {
+    animation: moveInfoPhone 0.75s ease-in-out 0.75s 1 forwards;
+  }
+}
+
+@keyframes moveInfoPhone {
+  from {
+    opacity: 0;
+    transform: translate(-15vw, 175px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(15vw, 175px);
+  }
+}
+
+@keyframes moveLogoPhone {
+  from {
+    opacity: 0;
+    transform: translate(60vw, 30vh);
+  }
+  to {
+    opacity: 1;
+    transform: translate(12.5vw, 30vh);
   }
 }
