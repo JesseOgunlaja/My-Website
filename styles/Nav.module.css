@@ -52,6 +52,9 @@
       margin-right: 0;
       margin-left: 0;
     }
+    .nav {
+      display: flex;
+    }
     .nav ul li a {
       display: none;
     }
