@@ -329,7 +329,6 @@ button {
     width: 80vw;
   }
   .endcontainer {
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,7 +343,7 @@ button {
     transform: translate(35px,10px);
   }
   .playagain {
-    width: 100vw;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
