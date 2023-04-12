@@ -11,21 +11,21 @@ const contact = () => {
     e.preventDefault();
     setSubmitted(true)
 
-    emailjs
-      .sendForm(
-        "service_qt8bik7",
-        "template_ck5qh7r",
-        form.current,
-        "SWBcr0pFf3wH4zk_K"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_qt8bik7",
+    //     "template_ck5qh7r",
+    //     form.current,
+    //     "SWBcr0pFf3wH4zk_K"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   }
 
   return (
