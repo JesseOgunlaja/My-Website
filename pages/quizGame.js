@@ -189,7 +189,7 @@ function App() {
               .submit {
                 border-radius: 0px;
               }
-              .result {
+              .showing {
                 transform: translateY(150px)
               }
             }
@@ -220,7 +220,7 @@ function App() {
           <input type="submit" id="submit" value="Next" />
         </form>
       ) : (
-        <div className="end-result">
+        <div className={show ? 'end-result showing' : 'end-result'}>
           <div className="top"></div>
           <div className="buttons">
             <button onClick={reset}>Try again</button>
