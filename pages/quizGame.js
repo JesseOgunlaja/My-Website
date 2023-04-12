@@ -189,8 +189,8 @@ function App() {
               .submit {
                 border-radius: 0px;
               }
-              .end-result {
-                transform: translateY(200px)
+              .result {
+                transform: translateY(150px)
               }
             }
         `}</style>
