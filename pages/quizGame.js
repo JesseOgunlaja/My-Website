@@ -129,6 +129,7 @@ function App() {
               justify-content: flex-start;
               background-color: white;
               min-width: 350px;
+              transform: translateY(100px);
             }
             .question{
               text-align: center;
