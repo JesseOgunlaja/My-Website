@@ -129,7 +129,6 @@ function App() {
               justify-content: flex-start;
               background-color: white;
               min-width: 350px;
-              transform: translateY(100px);
             }
             .question{
               text-align: center;
@@ -189,6 +188,9 @@ function App() {
             @media (orientation: portrait) {
               .submit {
                 border-radius: 0px;
+              }
+              .end-result {
+                transform: translateY(100px)
               }
             }
         `}</style>
