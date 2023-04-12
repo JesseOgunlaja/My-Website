@@ -190,7 +190,7 @@ function App() {
                 border-radius: 0px;
               }
               .end-result {
-                transform: translateY(100px)
+                transform: translateY(200px)
               }
             }
         `}</style>
