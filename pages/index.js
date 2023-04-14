@@ -53,7 +53,7 @@ export default function Home() {
     <>
     <Meta/>
       <Head>
-      <script src="https://kit.fontawesome.com/b9c7cb7078.js" crossorigin="anonymous"></script>
+      {/* <script src="https://kit.fontawesome.com/b9c7cb7078.js" crossorigin="anonymous"></script> */}
       </Head>
       <div className={styles.home}>
       <div className={styles.info}>
