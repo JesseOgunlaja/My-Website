@@ -1,7 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import { useState, useEffect } from "react";
-import Head from 'next/head'
 import Meta from "@/components/Meta";
+import Head from "next/head";
 
 export default function Home() {
   const [increment, setIncrement] = useState(100);
@@ -52,9 +52,6 @@ export default function Home() {
   return (
     <>
     <Meta/>
-      <Head>
-      {/* <script src="https://kit.fontawesome.com/b9c7cb7078.js" crossorigin="anonymous"></script> */}
-      </Head>
       <div className={styles.home}>
       <div className={styles.info}>
         <div className={styles.hi}>I'm</div>
