@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jesseogunlaja.com
+
+# Sitemaps
+Sitemap: https://jesseogunlaja.com/sitemap.xml
