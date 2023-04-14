@@ -1,7 +1,6 @@
 import styles from "@/styles/Home.module.css";
 import { useState, useEffect } from "react";
 import Meta from "@/components/Meta";
-import Head from "next/head";
 
 export default function Home() {
   const [increment, setIncrement] = useState(100);
