@@ -29,7 +29,7 @@ function App() {
       "C: Verbal reasoning",
       "D: Non verbal reasoning",
     ],
-    ["A: Twix", "B: Haribo's", "C: MOAM's", "D: Strawberry laces"],
+    ["A: Twix", "B: Haribo's", "C: MAOAM's", "D: Strawberry laces"],
     ["A: Ayamase", "B: Jollof rice", "C: Fried rice", "D: White rice"],
     ["A: Gokuzu", "B: Nando's", "C: TGI friday", "D: Pizza express"],
   ];
