@@ -443,6 +443,12 @@ function App() {
           font-size: 20px;
           background: rgb(0, 160, 255);
         }
+
+        .diagonal {
+          width: 52.5px;
+          height: 5px; background: black;
+          transform: rotateZ(-45deg) translate(15px,50px)
+        }
         
         `}</style>
       {resultReached !== "nothing" && (
@@ -476,6 +482,7 @@ function App() {
               {stages >= 5 && <hr className="left-leg" />}
               {stages >= 6 && <hr className="right-leg" />}
             </div>
+            <hr className="diagonal"></hr>
             <hr className="overhang" />
             <hr className="top" />
             <hr className="side" />
