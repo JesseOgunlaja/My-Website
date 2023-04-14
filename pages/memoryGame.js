@@ -133,6 +133,18 @@ const App = () => {
           >
             Horror <span>4x6</span>
           </button>
+          <button
+            onClick={() =>
+              setGrid([
+                [5, 4, 1, 0, 8, 10,13],
+                [6, 9, 5, 10, 2, 4,12],
+                [8, 3, 2, 7, 0, 11,13],
+                [11, 1, 6, 3, 9, 7,12],
+              ]) & setCanGo(true)
+            }
+          >
+            Painful <span>4x7</span>
+          </button>
         </div>
       ) : (
         <Container grid={grid} randomiseGrid={randomiseGrid} reset={reset} />
