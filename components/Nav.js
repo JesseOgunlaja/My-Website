@@ -50,7 +50,7 @@ const Nav = () => {
               ? navShwoing
                 ? styles.true
                 : styles.false
-              : null
+              : undefined
           }`,
         ]}
       >
