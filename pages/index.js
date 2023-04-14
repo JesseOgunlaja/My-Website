@@ -66,7 +66,7 @@ export default function Home() {
         <br/>
         <a target="_blank" className={styles.github} href="https://github.com/JesseOgunlaja">
         <i class="fa-brands fa-github"></i>
-        <div> @JesseOgunlaja</div>
+        <div> JesseOgunlaja</div>
         </a>
       </div>
       <div className={styles.actualLogo}>
