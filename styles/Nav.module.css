@@ -78,12 +78,11 @@
       top: 0;
       right: 0;
     }
-    .name {
+    .name a {
       display: inline !important;
-      width: 40vw;
     }
     .name {
-      width: 60vw;
+      width: 40vw;
     }
     .bar1,.bar2,.bar3 {
       height: 2.5px;
