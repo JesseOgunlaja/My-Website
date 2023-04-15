@@ -80,6 +80,7 @@
     }
     .name a {
       display: inline !important;
+      width: 40vw;
     }
     .bar1,.bar2,.bar3 {
       height: 2.5px;
