@@ -27,7 +27,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 2px solid #0e1538;
+  border: 3.5px solid #0e1538;
 }
 
 .language {
@@ -39,7 +39,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 2px solid #0e1538;
+  border: 3.5px solid #0e1538;
 }
 
 .blink {
@@ -87,7 +87,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 2px solid #0e1538;
+  border: 3.5px solid #0e1538;
 }
 
 .email,.github {
