@@ -26,6 +26,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: 100%;
   -webkit-text-fill-color: transparent;
 }
 
@@ -37,6 +38,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: 100%;
   -webkit-text-fill-color: transparent;
 }
 
@@ -65,6 +67,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: 100%;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
   margin-bottom: 20px;
@@ -83,6 +86,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: 100%;
   -webkit-text-fill-color: transparent;
 }
 
@@ -102,6 +106,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 100%;
 }
 
 .home {
