@@ -19,25 +19,6 @@
 .name {
   font-size: 60px;
   font-weight: 100;
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.language {
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .blink {
@@ -58,14 +39,6 @@
 }
 
 .logoTitle {
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 60px;
   margin-bottom: 20px;
 }
@@ -73,17 +46,6 @@
 .languageLogos {
   display: flex;
   gap: 25px;
-}
-
-#faGradient {
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .email,.github {
@@ -94,14 +56,6 @@
 
 .email div,.github div {
   display: inline;
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .home {
@@ -147,6 +101,16 @@
   .info {
     animation: moveInfo 0.75s ease-in-out 0.75s 1 forwards;
   }
+  .name, .email div,.github div,#faGradient,.logoTitle,.language {
+    background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 }
 
 @media (orientation: portrait) {
@@ -161,9 +125,6 @@
     height: 110vh;
   }
   .name, .email div,.github div,#faGradient,.logoTitle,.language {
-    background: rgb(0,140,255);
-    background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: #1E90FF;
   }
 }
