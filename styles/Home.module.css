@@ -24,7 +24,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -35,7 +34,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -63,7 +61,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
@@ -81,7 +78,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -99,7 +95,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
