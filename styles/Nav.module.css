@@ -77,6 +77,9 @@
       top: 0;
       right: 0;
     }
+    .name a {
+      display: inline !important;
+    }
     .bar1,.bar2,.bar3 {
       height: 2.5px;
       background: white;
