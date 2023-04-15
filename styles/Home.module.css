@@ -18,6 +18,7 @@
 
 .name {
   font-size: 60px;
+  font-weight: 100;
   background: -webkit-linear-gradient(
     45deg,
     rgb(0, 140, 255),
@@ -158,6 +159,6 @@
     opacity: 1;
   }
   .home {
-    transform: translateY(100px);
+    transform: translateY(35px);
   }
 }
