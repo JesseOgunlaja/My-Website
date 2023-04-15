@@ -24,10 +24,10 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
+  background: rgb(0, 140, 255);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
 }
 
 .language {
@@ -37,8 +37,8 @@
     rgb(255, 140, 255)
   );
   background-clip: text;
+  background: rgb(0, 140, 255);
   -webkit-background-clip: text;
-  background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
 }
 
@@ -66,7 +66,7 @@
     rgb(255, 140, 255)
   );
   background-clip: text;
-  background-repeat: no-repeat;
+  background: rgb(0, 140, 255);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
@@ -85,8 +85,8 @@
     rgb(255, 140, 255)
   );
   background-clip: text;
+  background: rgb(0, 140, 255);
   -webkit-background-clip: text;
-  background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
 }
 
@@ -98,6 +98,7 @@
 
 .email div,.github div {
   display: inline;
+  background: rgb(0, 140, 255);
   background: -webkit-linear-gradient(
     45deg,
     rgb(0, 140, 255),
@@ -105,7 +106,6 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
 }
 
