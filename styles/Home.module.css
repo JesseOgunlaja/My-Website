@@ -84,6 +84,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
 }
 
 .email,.github {
@@ -152,13 +155,9 @@
 @media (orientation: portrait) {
   .actualLogo {
     transform: translate(12.5vw, 15vh);
-    /* margin: 10px; */
   }
   .info {
     transform: translate(15vw, 10vh);
     opacity: 1;
-  }
-  .home {
-    /* transform: translateY(20px); */
   }
 }
