@@ -24,7 +24,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -35,7 +34,6 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -81,12 +79,8 @@
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
 }
 
 .email,.github {
@@ -155,6 +149,7 @@
 @media (orientation: portrait) {
   .actualLogo {
     transform: translate(12.5vw, 15vh);
+    /* margin-bottom: 20px; */
   }
   .info {
     transform: translate(15vw, 10vh);
