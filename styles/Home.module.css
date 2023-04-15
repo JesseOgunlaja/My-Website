@@ -26,8 +26,8 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  background-size: 99%;
   -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
 }
 
 .language {
@@ -38,7 +38,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  background-size: 99%;
+  background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
 }
 
@@ -66,8 +66,8 @@
     rgb(255, 140, 255)
   );
   background-clip: text;
+  background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-size: 99%;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
   margin-bottom: 20px;
@@ -86,7 +86,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  background-size: 99%;
+  background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
 }
 
@@ -105,8 +105,8 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
+  background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
-  background-size: 99%;
 }
 
 .home {
