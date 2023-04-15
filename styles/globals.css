@@ -10,7 +10,7 @@
 body {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     background: #0e1538;
     color: white;
