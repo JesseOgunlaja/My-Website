@@ -102,7 +102,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: rgb(0, 140, 255)
 }
 
 .home {
@@ -160,6 +159,6 @@
     opacity: 1;
   }
   .home {
-    transform: translateY(20px);
+    /* transform: translateY(20px); */
   }
 }
