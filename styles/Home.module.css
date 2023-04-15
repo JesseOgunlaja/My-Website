@@ -12,7 +12,7 @@
   justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 17.5px;
+  font-size: 17.10px;
   border-radius: 20px 20px 20px 0px;
 }
 
@@ -27,7 +27,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 5px solid #0e1538;
 }
 
 .language {
@@ -39,7 +38,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 5px solid #0e1538;
 }
 
 .blink {
@@ -68,7 +66,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 5px solid #0e1538;
   font-size: 60px;
   margin-bottom: 20px;
 }
@@ -87,7 +84,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 5px solid #0e1538;
 }
 
 .email,.github {
@@ -106,7 +102,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 5px solid #0e1538;
 }
 
 .home {
@@ -163,6 +158,6 @@
     opacity: 1;
   }
   .home {
-    /* transform: translateY(-100px); */
+    height: 110vh;
   }
 }
