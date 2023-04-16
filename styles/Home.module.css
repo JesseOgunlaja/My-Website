@@ -117,6 +117,7 @@
     opacity: 1;
   }
   .home {
+    line-height: 150%;
     height: 125vh;
   }
   .name, .email div,.github div,#faGradient,.logoTitle,.language {
@@ -127,9 +128,5 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  object-fit: contain;
-  border: none;
-  text-decoration: none;
-  line-height: 150%;
   }
 }
