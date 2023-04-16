@@ -125,17 +125,13 @@
     height: 125vh;
   }
   .name, .email div,.github div,#faGradient,.logoTitle,.language {
-    background: -webkit-linear-gradient(
+    background: linear-gradient(
     45deg,
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
-  /* background-clip: text; */
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  outline: 2px solid black;;
   }
 }
