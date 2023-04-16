@@ -119,7 +119,7 @@
   .home {
     height: 125svh;
   }
-  .name, .email div,.github div,#faGradient,.logoTitle,.language {
+  #gradientText, .email div,.github div,#faGradient,.logoTitle,.language {
     background: linear-gradient(
     45deg,
     rgb(0, 140, 255),
