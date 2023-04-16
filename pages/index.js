@@ -56,7 +56,7 @@ export default function Home() {
         <div className={styles.hi}>I'm</div>
         <h1 className={styles.name}><span id={styles.gradientText}>Jesse Ogunlaja</span></h1>
         <div>
-          I code <span className={styles.language}>{text}</span>
+          I code <span className={styles.language}><span id={styles.gradientText}>{text}</span></span>
           <span className={increment === 1000 ? styles.blink : null}>|</span>
         </div>
         <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
