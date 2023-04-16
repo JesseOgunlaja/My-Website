@@ -54,19 +54,19 @@ export default function Home() {
       <div className={styles.home}>
       <div className={styles.info}>
         <div className={styles.hi}>I'm</div>
-        <h1 className={styles.name}><span id={styles.gradientText}>Jesse Ogunlaja</span></h1>
+        <h1 className={styles.name}>Jesse Ogunlaja</h1>
         <div>
-          I code <span className={styles.language}><span id={styles.gradientText}>{text}</span></span>
+          I code <span className={styles.language}>{text}</span>
           <span className={increment === 1000 ? styles.blink : null}>|</span>
         </div>
         <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
             <i aria-hidden className="fa fa-envelope fa-gradient"></i>
-            <div><span id={styles.gradientText}>jesseogunlaja@gmail.com</span></div>
+            <div> jesseogunlaja@gmail.com</div>
         </a>
         <br/>
         <a target="_blank" className={styles.github} href="https://github.com/JesseOgunlaja">
         <i aria-hidden className="fa-brands fa-github"></i>
-        <div><span id={styles.gradientText}>JesseOgunlaja</span></div>
+        <div> JesseOgunlaja</div>
         </a>
       </div>
       <div className={styles.actualLogo}>

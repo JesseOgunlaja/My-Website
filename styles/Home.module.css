@@ -117,9 +117,9 @@
     opacity: 1;
   }
   .home {
-    height: 125svh;
+    height: 125vh;
   }
-  #gradientText,#faGradient,.logoTitle {
+  .name, .email div,.github div,#faGradient,.logoTitle,.language {
     background: linear-gradient(
     45deg,
     rgb(0, 140, 255),
@@ -128,5 +128,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 100%;
+  background-repeat: repeat;
   }
 }
