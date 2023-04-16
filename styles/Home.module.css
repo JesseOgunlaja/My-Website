@@ -130,5 +130,6 @@
   object-fit: contain;
   border: none;
   text-decoration: none;
+  line-height: 150%;
   }
 }
