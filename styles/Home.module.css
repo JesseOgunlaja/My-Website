@@ -58,11 +58,6 @@
   display: inline;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-}
-
 @keyframes blink {
   from {
     color: white;
@@ -122,7 +117,7 @@
     opacity: 1;
   }
   .home {
-    height: 125vh;
+    height: 125svh;
   }
   .name, .email div,.github div,#faGradient,.logoTitle,.language {
     background: linear-gradient(
