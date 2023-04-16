@@ -36,17 +36,10 @@
 }
 
 @media (orientation: portrait) {
-  .paragraph {
-    width: 100vw;
-    transform: translateY(300px);
+  .aboutMe {
+    transform: translateY(35px);
   }
-  .image {
-    height: 500px;
-    width: 500px;
-    transform: translate(100px,50vh);
-    opacity: 1;
-  }
-  .title {
-    transform: translateY(300px);
+  .text {
+    font-size: 15px;
   }
 }
