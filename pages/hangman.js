@@ -93,8 +93,8 @@ function App() {
       setResultReached("wins");
 
       go === 1
-        ? setPlayer2Score(player1Score + 1)
-        : setPlayer1Score(player2Score + 1);
+        ? setPlayer2Score(player2Score + 1)
+        : setPlayer1Score(player1Score + 1);
     }
   }
 
