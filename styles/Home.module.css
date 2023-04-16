@@ -119,7 +119,7 @@
   .home {
     height: 125vh;
   }
-  .email div, .github div {
+  .email div, .github div,.name,.logoTitle {
     line-height: 200%;
   }
   .name, .email div,.github div,#faGradient,.logoTitle,.language {
