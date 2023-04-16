@@ -134,6 +134,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 100%;
-  border: none;
+  box-shadow: 0px 0px 0px 5px #0e1538,
   }
 }
