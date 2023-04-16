@@ -61,12 +61,12 @@ export default function Home() {
         </div>
         <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
             <i aria-hidden className="fa fa-envelope fa-gradient"></i>
-            <div> jesseogunlaja@gmail.com</div>
+            <div><span id={styles.gradientText}>jesseogunlaja@gmail.com</span></div>
         </a>
         <br/>
         <a target="_blank" className={styles.github} href="https://github.com/JesseOgunlaja">
         <i aria-hidden className="fa-brands fa-github"></i>
-        <div> JesseOgunlaja</div>
+        <div><span id={styles.gradientText}>JesseOgunlaja</span></div>
         </a>
       </div>
       <div className={styles.actualLogo}>
