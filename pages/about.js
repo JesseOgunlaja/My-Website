@@ -30,9 +30,6 @@ const about = () => {
           this website.
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <img className={styles.image} src="/image.png" />
-        </div>
       </div>
     </div>
   );

@@ -1,65 +1,36 @@
 .paragraph {
-  width: 50vw;
-  height: 100vh;
+  width: 98vw;
+  text-align: center;
 }
 
 .text {
-  font-size: 2.35vh;
+  font-size: 1.5rem;
 }
 
 .title {
-  display: block;
-  width: 100vw;
   text-align: center;
 }
 
 .aboutMe {
-  width: 100vw;
-  height: 100vh;
   padding: 15px;
   display: flex;
   flex-direction: column;
-  transform: translateY(-35vh);
-}
-
-.image {
-  height: 650px;
-  width: 650px;
-  opacity: 0;
-  position: absolute;
-  right: 0;
+  /* transform: translateY(-35vh); */
 }
 
 @media (orientation: landscape) {
-  .image {
-    animation: moveImage 1s ease-in-out 1s 1 forwards;
-  }
   .paragraph {
     animation: moveParagraph 1s ease-in-out 0s 1 forwards;
-  }
-  .title {
-    transform: translateY(300px);
   }
 }
 
 @keyframes moveParagraph {
   from {
-    transform: translateY(125vh);
+    transform: translateY(50vh);
     opacity: 0;
   }
   to {
-    transform: translateY(42.5vh);
-    opacity: 1;
-  }
-}
-
-@keyframes moveImage {
-  from {
-    top: 0vh;
-    opacity: 0;
-  }
-  to {
-    top: 40vh;
+    transform: translateY(0px);
     opacity: 1;
   }
 }
