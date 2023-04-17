@@ -61,7 +61,9 @@ export default function Home() {
           );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          display: inline;
+            border: none;
+            margin: none;
+            padding: 5px;
         }
       `}
     </style>
