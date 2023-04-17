@@ -126,8 +126,8 @@
     height: 125vh;
   }
   .name,
-  .email div,
-  .github div,
+  .email,
+  .github,
   .logoTitle,
   .language,
   #faGradient {
