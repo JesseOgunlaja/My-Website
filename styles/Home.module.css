@@ -123,7 +123,7 @@
     opacity: 1;
   }
   .home {
-    height: 100vh;
+    height: 105vh;
   }
   /* .name, */
   .email div,
@@ -158,5 +158,8 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .logoTitle {
+    transform: translateX(1px);
   }
 }
