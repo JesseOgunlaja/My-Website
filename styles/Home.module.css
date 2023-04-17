@@ -143,6 +143,6 @@
   text-decoration: none;
   }
   .name,.github div,.email div,.logoTitle,.language {
-    transform:translateX(-0.1px)
+    transform:translateY(-0.1px)
   }
 }
