@@ -60,22 +60,22 @@ export default function Home() {
           <span className={increment === 1000 ? styles.blink : null}>|</span>
         </div>
         <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
-            <i aria-hidden className="fa fa-envelope fa-gradient"></i>
+            <i  className="fa fa-envelope fa-gradient"></i>
             <div> jesseogunlaja@gmail.com</div>
         </a>
         <br/>
         <a target="_blank" className={styles.github} href="https://github.com/JesseOgunlaja">
-        <i aria-hidden className="fa-brands fa-github"></i>
+        <i  className="fa-brands fa-github"></i>
         <div> JesseOgunlaja</div>
         </a>
       </div>
       <div className={styles.actualLogo}>
         <div className={styles.logoTitle}>Jesse Ogunlaja</div>
         <div className={styles.languageLogos}>
-          <i aria-hidden id={styles.faGradient} className="fa-brands fa-react fa-3x"></i>
-          <i aria-hidden id={styles.faGradient} className="fa-brands fa-js fa-3x"></i>
-          <i aria-hidden id={styles.faGradient} className="fa-solid fa-code fa-3x"></i>
-          <i aria-hidden id={styles.faGradient} className="fa-brands fa-css3 fa-3x"></i>
+          <i  id={styles.faGradient} className="fa-brands fa-react fa-3x"></i>
+          <i  id={styles.faGradient} className="fa-brands fa-js fa-3x"></i>
+          <i  id={styles.faGradient} className="fa-solid fa-code fa-3x"></i>
+          <i  id={styles.faGradient} className="fa-brands fa-css3 fa-3x"></i>
         </div>
       </div>
       </div>
