@@ -160,6 +160,7 @@
     -webkit-text-fill-color: transparent;
   }
   .logoTitle {
-    transform: translateX(1px);
+    display: inline;
+    font-size: 32.5px;
   }
 }
