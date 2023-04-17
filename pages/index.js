@@ -54,8 +54,8 @@ export default function Home() {
     <>
       <Meta />
       <style jsx>{`
-        .fa-code,.fa-js {
-          transform: translateX(-0.1px)
+        .fa-react,.fa-css3 {
+          transform: translateX(0.1px)
         }
       `}</style>
       <div className={styles.home}>
