@@ -120,18 +120,22 @@
     height: 125vh;
   }
   .name, .email div,.github div,.logoTitle,.language {
-    background: linear-gradient(
+    background: -webkit-linear-gradient(
     45deg,
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline;
   }
   .languageLogos {
-    border: none;
-    margin: none;
-    padding: none;
+    background: -webkit-linear-gradient(
+    rgb(0, 140, 255),
+    rgb(255, 140, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 }
