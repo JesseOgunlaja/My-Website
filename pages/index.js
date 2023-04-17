@@ -63,7 +63,8 @@ export default function Home() {
           -webkit-text-fill-color: transparent;
             border: none;
             margin: none;
-            padding: 5px;
+            padding: none;
+            display: block;
         }
       `}
     </style>
