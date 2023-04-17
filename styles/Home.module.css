@@ -116,14 +116,14 @@
 
 @media (orientation: portrait) {
   .actualLogo {
-    transform: translate(10vw, 15vh);
+    transform: translate(5vw, 15vh);
   }
   .info {
-    transform: translate(12.5vw, 10vh);
+    transform: translate(6.5vw, 10vh);
     opacity: 1;
   }
   .home {
-    height: 105vh;
+    height: 100vh;
   }
   /* .name, */
   .email div,
