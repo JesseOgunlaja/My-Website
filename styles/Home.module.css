@@ -162,6 +162,6 @@
   .logoTitle {
     font-size: 60px;
     width: 350px;
-    display: inline; 
+    /* display: inline;  */
   }
 }
