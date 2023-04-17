@@ -147,7 +147,6 @@
     text-decoration: none;
   }
   .name {
-    transform: translateY(-0.1px);
     width:0px;
     font-size: 42.5px;
     display: inline;
@@ -155,6 +154,7 @@
   }
   .name span{
     width: 0px;
+    transform: translateY(-0.1px);
     height: 0px;
     background: -webkit-linear-gradient(
       45deg,
