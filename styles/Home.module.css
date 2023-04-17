@@ -116,10 +116,10 @@
 
 @media (orientation: portrait) {
   .actualLogo {
-    transform: translate(12.5vw, 15vh);
+    transform: translate(10vw, 15vh);
   }
   .info {
-    transform: translate(15vw, 10vh);
+    transform: translate(12.5vw, 10vh);
     opacity: 1;
   }
   .home {
