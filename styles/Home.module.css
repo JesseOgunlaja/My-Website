@@ -159,8 +159,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .logoTitle {
-    display: inline;
-    font-size: 32.5px;
-  }
 }
