@@ -81,7 +81,7 @@ export default function Home() {
           </a>
         </div>
         <div className={styles.actualLogo}>
-          <div className={styles.logoTitle}>Jesse Ogunlaja</div>
+          <p className={styles.logoTitle}>Jesse Ogunlaja</p>
           <div className={styles.languageLogos}>
             <i
               aria-hidden
