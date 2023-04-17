@@ -146,8 +146,13 @@
     border: none;
     text-decoration: none;
   }
+  .name {
+    width:0px;
+    /* height:0px; */
+  }
   .name span{
     width: 0px;
+    height: 0px;
     background: -webkit-linear-gradient(
       45deg,
       rgb(0, 140, 255),
