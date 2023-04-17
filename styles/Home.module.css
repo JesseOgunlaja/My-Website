@@ -129,7 +129,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
-  /* #faGradient {
+  #faGradient {
     font-size: 50px;
     background: -webkit-linear-gradient(
     rgb(0, 140, 255),
@@ -142,8 +142,8 @@
   border: none;
   margin: 0px;
   text-decoration: none;
-  } */
-  .languageLogos {
+  }
+  /* .languageLogos {
     font-size: 17.5px;
     background: -webkit-linear-gradient(
     rgb(0, 140, 255),
@@ -157,5 +157,7 @@
   margin: 0px;
   text-decoration: none;
   width: 125%;
-  }
+  align-items: center;
+  justify-content: center;
+  } */
 }
