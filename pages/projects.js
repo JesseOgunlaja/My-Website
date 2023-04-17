@@ -13,37 +13,37 @@ const projects = () => {
             <Link className={[`${styles.link} ${styles.hidden}`]} href={"/memoryGame"}>
           <div className={styles.game}>
               Memory Game
-            <Image className={styles.img} src="/memory.png" />
+            <Image height="350"width="350" className={styles.img} src="/memory.png" />
           </div>
             </Link>
           <Link className={styles.link} href={"/ticTacToe"}>
           <div className={[`${styles.game} ${styles.ticTacToe}`]}>
             Tic Tac Toe
-          <Image className={styles.img} src="/ticTacToe.png"/>
+          <Image width="276" height="250" className={styles.img} src="/ticTacToe.png"/>
           </div>
           </Link>
           <Link className={styles.link} href={"/calculator"}>
           <div className={styles.game}>
             Calculator
-          <Image className={styles.img} src="/calculator.png"/>
+          <Image height="250" width="158" className={styles.img} src="/calculator.png"/>
           </div>
           </Link>
           <Link className={styles.link} style={{flexDirection: 'column'}} href={"/quizGame"}>
           <div className={styles.game}>
             Quiz Game
           </div>
-          <Image className={[`${styles.game} ${styles.quizGame}`]} src="/quiz.png"/>
+          <Image height="350"width="350" className={[`${styles.game} ${styles.quizGame}`]} src="/quiz.png"/>
           </Link>
           <Link className={[`${styles.link} ${styles.hidden}`]} href={"/rockPaperScissors"}>
           <div className={styles.game}>
             Rock Paper Scissors
-          <Image className={styles.img} src="/rps.png"/>
+          <Image width="258" height="250" className={styles.img} src="/rps.png"/>
           </div>
           </Link>
           <Link className={[`${styles.link} ${styles.hidden}`]} href={"/hangman"}>
           <div className={styles.game}>
             Hangman
-          <Image className={styles.img} src="/hangman.png"/>
+          <Image height="250" width="218" className={styles.img} src="/hangman.png"/>
           </div>
           </Link>
         </div>
