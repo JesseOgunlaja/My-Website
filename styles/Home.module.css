@@ -147,6 +147,7 @@
     text-decoration: none;
   }
   .language {
+    transform: translateY(-10px);
     margin: 0px;
     border: none;
     text-decoration: none;
