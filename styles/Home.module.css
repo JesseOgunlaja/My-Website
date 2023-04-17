@@ -147,8 +147,7 @@
     text-decoration: none;
   }
   .language {
-    position: relative;
-    bottom: 5px; 
+    line-height: 200%;
     margin: 0px;
     border: none;
     text-decoration: none;
