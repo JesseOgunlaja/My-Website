@@ -143,6 +143,10 @@
   text-decoration: none;
   }
   .language {
+    font-size: 17px;
     transform: translateY(-1px);
+    margin: 0px;
+  border: none;
+  text-decoration: none;
   }
 }
