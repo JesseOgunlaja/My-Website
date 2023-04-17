@@ -62,10 +62,10 @@ export default function Home() {
         <div className={styles.info}>
           <div className={styles.hi}>I'm</div>
           <h1 className={styles.name}>Jesse Ogunlaja</h1>
-          <div>
+          <p>
             I code <span className={styles.language}>{text}</span>
             <span className={increment === 1000 ? styles.blink : null}>|</span>
-          </div>
+          </p>
           <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
             <i aria-hidden className="fa fa-envelope fa-gradient"></i>
             <div> jesseogunlaja@gmail.com</div>
