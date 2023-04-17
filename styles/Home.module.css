@@ -129,4 +129,9 @@
   -webkit-text-fill-color: transparent;
   display: inline;
   }
+  .languageLogos {
+    border: none;
+    margin: none;
+    padding: 5px;
+  }
 }
