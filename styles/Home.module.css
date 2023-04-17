@@ -130,6 +130,7 @@
   -webkit-text-fill-color: transparent;
   }
   .languageLogos {
+    font-size: 17.5px;
     background: -webkit-linear-gradient(
     rgb(0, 140, 255),
     rgb(255, 140, 255)
