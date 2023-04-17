@@ -14,7 +14,7 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Jesse Ogunlaja",
+  title: "Jesse Ogunlaja ",
   keywords:
     " Jesse Ogunlaja's website, Jesse's website, ogunjx's website, Jesse Ogunlaja, Jesse, OGUNJX",
   description: "Jesse Ogunlaja's website. The place for all my projects.",
