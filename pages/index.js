@@ -20,13 +20,15 @@ export default function Home() {
 
   useEffect(() => {
     setTimeout(() => {
-      if (languageId === languages.length && text.length === 1 && deleting === false) {
+      if (
+        languageId === languages.length &&
+        text.length === 1 &&
+        deleting === false
+      ) {
         setLanguageId(0);
-        setStringId(1)
-        setText("")
-      }
-      else {
-
+        setStringId(1);
+        setText("");
+      } else {
         let currentText = languages[languageId].slice(0, stringId);
         setText(currentText);
         if (stringId < languages[languageId].length && deleting === false) {
@@ -43,41 +45,61 @@ export default function Home() {
             setLanguageId(languageId + 1);
             setDeleting(false);
           }
-      }
+        }
       }
     }, increment);
   }, [stringId]);
 
   return (
     <>
-    <Meta/>
+      <Meta />
       <div className={styles.home}>
-      <div className={styles.info}>
-        <div className={styles.hi}>I'm</div>
-        <h1 className={styles.name}>Jesse Ogunlaja</h1>
-        <div>
-          I code <span className={styles.language}>{text}</span>
-          <span className={increment === 1000 ? styles.blink : null}>|</span>
-        </div>
-        <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
-            <i  className="fa fa-envelope fa-gradient"></i>
+        <div className={styles.info}>
+          <div className={styles.hi}>I'm</div>
+          <h1 className={styles.name}>Jesse Ogunlaja</h1>
+          <div>
+            I code <span className={styles.language}>{text}</span>
+            <span className={increment === 1000 ? styles.blink : null}>|</span>
+          </div>
+          <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
+            <i aria-hidden className="fa fa-envelope fa-gradient"></i>
             <div> jesseogunlaja@gmail.com</div>
-        </a>
-        <br/>
-        <a target="_blank" className={styles.github} href="https://github.com/JesseOgunlaja">
-        <i  className="fa-brands fa-github"></i>
-        <div> JesseOgunlaja</div>
-        </a>
-      </div>
-      <div className={styles.actualLogo}>
-        <div className={styles.logoTitle}>Jesse Ogunlaja</div>
-        <div className={styles.languageLogos}>
-          <i  id={styles.faGradient} className="fa-brands fa-react fa-3x"></i>
-          <i  id={styles.faGradient} className="fa-brands fa-js fa-3x"></i>
-          <i  id={styles.faGradient} className="fa-solid fa-code fa-3x"></i>
-          <i  id={styles.faGradient} className="fa-brands fa-css3 fa-3x"></i>
+          </a>
+          <br />
+          <a
+            target="_blank"
+            className={styles.github}
+            href="https://github.com/JesseOgunlaja"
+          >
+            <i aria-hidden className="fa-brands fa-github"></i>
+            <div> JesseOgunlaja</div>
+          </a>
         </div>
-      </div>
+        <div className={styles.actualLogo}>
+          <div className={styles.logoTitle}>Jesse Ogunlaja</div>
+          <div className={styles.languageLogos}>
+            <i
+              aria-hidden
+              id={styles.faGradient}
+              className="fa-brands fa-react fa-3x"
+            ></i>
+            <i
+              aria-hidden
+              id={styles.faGradient}
+              className="fa-brands fa-js fa-3x"
+            ></i>
+            <i
+              aria-hidden
+              id={styles.faGradient}
+              className="fa-solid fa-code fa-3x"
+            ></i>
+            <i
+              aria-hidden
+              id={styles.faGradient}
+              className="fa-brands fa-css3 fa-3x"
+            ></i>
+          </div>
+        </div>
       </div>
     </>
   );
