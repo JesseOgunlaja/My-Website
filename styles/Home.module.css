@@ -125,7 +125,7 @@
   .home {
     height: 125vh;
   }
-  .name,
+  /* .name, */
   .email div,
   .github div,
   .logoTitle,
@@ -146,10 +146,14 @@
     border: none;
     text-decoration: none;
   }
-  .language {
-    margin: 0px;
-    padding: 5px;
-    border: none;
-    text-decoration: none;
+  .name span{
+    background: -webkit-linear-gradient(
+      45deg,
+      rgb(0, 140, 255),
+      rgb(255, 140, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
