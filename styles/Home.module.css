@@ -12,7 +12,7 @@
   justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 17.10px;
+  font-size: 17.1px;
   border-radius: 20px 20px 20px 0px;
 }
 
@@ -48,13 +48,14 @@
   gap: 25px;
 }
 
-.email,.github {
+.email,
+.github {
   text-decoration: none;
   color: inherit;
-  
 }
 
-.email div,.github div {
+.email div,
+.github div {
   display: inline;
 }
 
@@ -96,15 +97,20 @@
   .info {
     animation: moveInfo 0.75s ease-in-out 0.75s 1 forwards;
   }
-  .name, .email div,.github div,#faGradient,.logoTitle,.language {
+  .name,
+  .email div,
+  .github div,
+  #faGradient,
+  .logoTitle,
+  .language {
     background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      45deg,
+      rgb(0, 140, 255),
+      rgb(255, 140, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -119,34 +125,38 @@
   .home {
     height: 125vh;
   }
-  .name, .email div,.github div,.logoTitle,.language {
+  .name,
+  .email div,
+  .github div,
+  .logoTitle,
+  .language,
+  #faGradient {
     background: -webkit-linear-gradient(
-    45deg,
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      45deg,
+      rgb(0, 140, 255),
+      rgb(255, 140, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #faGradient {
     font-size: 50px;
-    background: -webkit-linear-gradient(
-    rgb(0, 140, 255),
-    rgb(255, 140, 255)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0px;
-  border: none;
-  text-decoration: none;
+    margin: 0px;
+    border: none;
+    text-decoration: none;
   }
   .language {
     font-size: 17px;
-    transform: translateY(-1px);
+    transform: translateY(1px);
     margin: 0px;
-  border: none;
-  text-decoration: none;
+    border: none;
+    text-decoration: none;
+  }
+  .logoTitle {
+    transform: translateY(5px);
+    margin: 0px;
+    border: none;
+    text-decoration: none;
   }
 }
