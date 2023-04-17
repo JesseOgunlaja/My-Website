@@ -121,7 +121,7 @@
   }
   .name, .email div,.github div,.logoTitle,.language {
     background: -webkit-linear-gradient(
-    /* 45deg, */
+    45deg,
     rgb(0, 140, 255),
     rgb(255, 140, 255)
   );
@@ -142,8 +142,7 @@
   border: none;
   text-decoration: none;
   }
-  .name,.github div,.email div,.logoTitle,.language {
-    /* transform:translateY(-0.1px); */
-    /* transform:translateX(-0.1px) */
+  .language {
+    transform: translateY(-1px);
   }
 }
