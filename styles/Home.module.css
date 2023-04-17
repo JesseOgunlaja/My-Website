@@ -146,4 +146,11 @@
     border: none;
     text-decoration: none;
   }
+  .language {
+    margin: 0px;
+    border: none;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+  }
 }
