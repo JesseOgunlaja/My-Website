@@ -154,7 +154,7 @@
     text-decoration: none;
   }
   .logoTitle {
-    transform: translateY(5px);
+    transform: translateY(-5px);
     margin: 0px;
     border: none;
     text-decoration: none;
