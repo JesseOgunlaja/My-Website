@@ -148,6 +148,8 @@
   }
   .name {
     width:0px;
+    font-size: 42.5px;
+    display: inline;
     /* height:0px; */
   }
   .name span{
@@ -158,7 +160,6 @@
       rgb(0, 140, 255),
       rgb(255, 140, 255)
     );
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
