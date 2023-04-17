@@ -51,6 +51,20 @@ export default function Home() {
   return (
     <>
     <Meta/>
+    <style jsx>
+      {`
+        .fa-3x {
+          background: linear-gradient(
+            45deg,
+            rgb(0, 140, 255),
+            rgb(255, 140, 255)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline;
+        }
+      `}
+    </style>
       <div className={styles.home}>
       <div className={styles.info}>
         <div className={styles.hi}>I'm</div>

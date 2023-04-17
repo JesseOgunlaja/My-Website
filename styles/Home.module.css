@@ -119,10 +119,7 @@
   .home {
     height: 125vh;
   }
-  .email div, .github, .language {
-    line-height: 200%;
-  }
-  .name, .email div,.github div,#faGradient,.logoTitle,.language {
+  .name, .email div,.github div,.logoTitle,.language {
     background: linear-gradient(
     45deg,
     rgb(0, 140, 255),
