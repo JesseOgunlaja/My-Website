@@ -53,6 +53,11 @@ export default function Home() {
   return (
     <>
       <Meta />
+      <style jsx>{`
+        .fa-code {
+          transform: translateX(-10px)
+        }
+      `}</style>
       <div className={styles.home}>
         <div className={styles.info}>
           <div className={styles.hi}>I'm</div>
