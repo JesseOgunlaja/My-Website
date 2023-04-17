@@ -54,7 +54,7 @@ export default function Home() {
     <>
       <Meta />
       <style jsx>{`
-        .fa-code,.fa-js,.name,.email div,.github div,.language {
+        .fa-code,.fa-js {
           transform: translateX(-0.1px)
         }
       `}</style>
