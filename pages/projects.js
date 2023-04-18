@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "@/styles/Projects.module.css";
+import Image from 'next/image'
 import Meta from "@/components/Meta";
 
 const projects = () => {
@@ -37,13 +37,13 @@ const projects = () => {
           <Link className={[`${styles.link} ${styles.hidden}`]} href={"/rockPaperScissors"}>
           <div className={styles.game}>
             Rock Paper Scissors
-          <Image width="258" height="250" className={styles.img} src="/rps.png"/>
+          <Image width="258" height="262" className={styles.img} src="/rps.png"/>
           </div>
           </Link>
           <Link className={[`${styles.link} ${styles.hidden}`]} href={"/hangman"}>
           <div className={styles.game}>
             Hangman
-          <Image height="250" width="218" className={styles.img} src="/hangman.png"/>
+            <Image height="250" width="218" src="/hangman.png"/>
           </div>
           </Link>
         </div>
