@@ -43,7 +43,7 @@ const projects = () => {
           <Link className={[`${styles.link} ${styles.hidden}`]} href={"/hangman"}>
           <div className={styles.game}>
             Hangman
-            <Image height="250" width="218" src="/hangman.png"/>
+            <Image height="250" width="218" src="/hangman.jpg"/>
           </div>
           </Link>
         </div>
