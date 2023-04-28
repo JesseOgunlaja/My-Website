@@ -1,10 +1,10 @@
 .paragraph {
-  width: 98vw;
+  width: 80vw;
   text-align: center;
 }
 
 .text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .title {
@@ -15,7 +15,9 @@
   padding: 15px;
   display: flex;
   flex-direction: column;
-  /* transform: translateY(-35vh); */
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
 
 @media (orientation: landscape) {

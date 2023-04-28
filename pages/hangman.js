@@ -210,7 +210,7 @@ function App() {
         }
 
         .hangman {
-            transform: translateY(-20px)
+            transform: translateY(-125px)
         }
         
         .bottom {
@@ -234,15 +234,14 @@ function App() {
         }
         
         .overhang {
-          position: absolute;
           width: 5px;
           height: 50px;
+          transform: translate(220px,50px);
           background: black;
-          left: 16.5vw;
         }
         
         .person {
-          position: absolute;
+          transform: translateY(225px)
         }
         
         .face {
@@ -294,7 +293,7 @@ function App() {
           align-items: center;
           justify-content: center;
           gap: 10px;
-          top: 55vh;
+          top: 57.5vh;
           width:100vw;
         }
         
@@ -322,7 +321,6 @@ function App() {
           align-items: center;
           justify-content: center;
           justify-items: center;
-          transform: translateY(11vh);
         }
         
         .alphabet-letter {
@@ -447,7 +445,7 @@ function App() {
         .diagonal {
           width: 52.5px;
           height: 5px; background: black;
-          transform: rotateZ(-45deg) translate(15px,50px)
+          transform: rotateZ(-45deg) translate(-20px,85px)
         }
         
         `}</style>
@@ -475,12 +473,12 @@ function App() {
         <>
           <div className="hangman">
             <div className="person">
-              {stages >= 1 && <div className="face"></div>}
-              {stages >= 2 && <hr className="body" />}
-              {stages >= 3 && <hr className="left-arm" />}
-              {stages >= 4 && <hr className="right-arm" />}
-              {stages >= 5 && <hr className="left-leg" />}
-              {stages >= 6 && <hr className="right-leg" />}
+              {stages >= 1 ? <div className="face"></div> : <div style={{visibility: "hidden"}} className="face"></div>}
+              {stages >= 2 ? <hr className="body" /> : <hr style={{visibility: "hidden"}} className="body" />}
+              {stages >= 3 ? <hr className="left-arm" /> : <hr style={{visibility: "hidden"}} className="left-arm" />}
+              {stages >= 4 ? <hr className="right-arm" /> : <hr style={{visibility: "hidden"}} className="right-arm" />}
+              {stages >= 5 ? <hr className="left-leg" /> : <hr style={{visibility: "hidden"}} className="left-leg" />}
+              {stages >= 6 ? <hr className="right-leg" /> : <hr style={{visibility: "hidden"}} className="right-leg" />}
             </div>
             <hr className="diagonal"></hr>
             <hr className="overhang" />
