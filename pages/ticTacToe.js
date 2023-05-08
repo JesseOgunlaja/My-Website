@@ -51,7 +51,7 @@ function App() {
     setTimeout(() => {
       if(currentLine.length === 0) {
 
-        if (grid.every((val) => val !== "")) {
+        if (grid.every((square) => square !== "")) {
           setEndMessage("It's a draw");
         } 
       }
