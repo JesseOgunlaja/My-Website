@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Meta from "@/components/Meta";
-import styles from '@/styles/TicTacToe.module.css'
+import styles from "@/styles/TicTacToe.module.css";
 
 function App() {
   const [startingPlayer, setStartingPlayer] = useState("X");
@@ -12,7 +12,7 @@ function App() {
   const [grid, setGrid] = useState(Array.from({ length: 9 }).fill(""));
 
   const click = (index) => {
-    if(grid[index] === ""){
+    if (grid[index] === "") {
       if (winningLine.length === 0) {
         const currentGrid = [...grid];
         currentGrid[index] = player;
@@ -23,6 +23,7 @@ function App() {
   };
 
   const checkWin = () => {
+    let currentLine = [];
     const winningLines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -38,6 +39,7 @@ function App() {
       const [a, b, c] = element;
       if (grid[a] && grid[a] === grid[b] && grid[a] === grid[c]) {
         if (grid[a] !== "") {
+          currentLine = element
           setWinningLine(element);
           setTimeout(() => {
             setEndMessage(grid[a]);
@@ -45,10 +47,19 @@ function App() {
         }
       }
     });
+
+    setTimeout(() => {
+      if(currentLine.length === 0) {
+
+        if (grid.every((val) => val !== "")) {
+          setEndMessage("It's a draw");
+        } 
+      }
+    }, 1255)
   };
 
   const reset = (playAgain) => {
-    if(playAgain){  
+    if (playAgain) {
       if (startingPlayer === "X") {
         setStartingPlayer("O");
         setPlayer("O");
@@ -56,9 +67,8 @@ function App() {
         setStartingPlayer("X");
         setPlayer("X");
       }
-    }
-    else{
-      setPlayer(startingPlayer)
+    } else {
+      setPlayer(startingPlayer);
     }
 
     setWinningLine([]);
@@ -67,12 +77,8 @@ function App() {
   };
 
   useEffect(() => {
-    if (grid.every((val) => val !== "")) {
-      setEndMessage("It's a draw");
-    } else {
-      checkWin();
-    }
-  }, [grid]);
+    checkWin()
+  }, [grid])
 
   useEffect(() => {
     if (endMessage === "X") {
@@ -83,8 +89,8 @@ function App() {
   }, [endMessage]);
 
   return (
-    <div className={styles.app}>  
-    <Meta title="Tic Tac Toe"/> 
+    <div className={styles.app}>
+      <Meta title="Tic Tac Toe" />
       {endMessage === "" ? (
         <>
           <div className={styles.container}>
@@ -105,14 +111,25 @@ function App() {
                 <div
                   key={index}
                   className={
-                    winningLine.includes(index) ? [`${styles.cell} ${styles.winningLine}`] : styles.cell
+                    winningLine.includes(index)
+                      ? [`${styles.cell} ${styles.winningLine}`]
+                      : styles.cell
                   }
                   onClick={() => click(index)}
                 >
-                  <span className={element === "X" ? styles.X : element === "O" ? styles.O : null}>
+                  <span
+                    className={
+                      element === "X"
+                        ? styles.X
+                        : element === "O"
+                        ? styles.O
+                        : null
+                    }
+                  >
                     {element === "X" && (
                       <>
-                        <hr className={styles.line1} /> <hr className={styles.line2} />
+                        <hr className={styles.line1} />{" "}
+                        <hr className={styles.line2} />
                       </>
                     )}
                   </span>
@@ -131,7 +148,8 @@ function App() {
               {endMessage === "X" ? (
                 <div className={styles.endresult}>
                   <div className={styles.bigX}>
-                    <hr className={styles.bigline1} /> <hr className={styles.bigline2} />
+                    <hr className={styles.bigline1} />{" "}
+                    <hr className={styles.bigline2} />
                   </div>
                   <p className={styles.winner}>Winner!</p>
                 </div>
@@ -151,14 +169,13 @@ function App() {
                       <p className={styles.bigO}>O</p>
                     </div>
                   </div>
-                  <p className={[`${styles.winner} ${styles.drawWinner}`]}>Draw!</p>
+                  <p className={[`${styles.winner} ${styles.drawWinner}`]}>
+                    Draw!
+                  </p>
                 </div>
               )}
               <button className={styles.playagain} onClick={() => reset(true)}>
-                <div className={styles.text}>
-
-                Play again
-                </div>
+                <div className={styles.text}>Play again</div>
               </button>
             </div>
           )}
