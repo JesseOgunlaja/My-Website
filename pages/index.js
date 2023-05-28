@@ -62,7 +62,7 @@ export default function Home() {
         <div className={styles.info}>
           <div className={styles.hi}>I'm</div>
           <h1 className={styles.name}><span>Jesse Ogunlaja</span></h1>
-          <p>
+          <p className={styles.languageBox}>
             I code <span className={styles.language}>{text}</span>
             <span className={increment === 1000 ? styles.blink : null}>|</span>
           </p>

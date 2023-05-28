@@ -16,7 +16,7 @@ const about = () => {
           at the time. I built a lot of small beginner apps such as an adventure
           game and a chatbot which helped to further my knowledge on more
           programming principles such as conditionals and variable types. After
-          a while ,I became bored of C++ and wanted to make something that you
+          a while, I became bored of C++ and wanted to make something that you
           could properly see, like a website. I then started learning HTML and
           CSS. After some time, I learnt JavaScript, which didn’t take too long
           seeming as some of it was identical to C++. After a while I wanted to

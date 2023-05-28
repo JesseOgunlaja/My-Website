@@ -91,6 +91,9 @@
 }
 
 @media (orientation: landscape) {
+  .languageBox {
+    margin-bottom: 5px;
+  }
   .actualLogo {
     animation: moveLogo 0.75s ease-in-out 1 forwards;
   }

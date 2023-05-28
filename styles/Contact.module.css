@@ -37,7 +37,7 @@
 .submit:hover {
   box-shadow: none;
   border: none;
-  animation: border 0.25s linear 0s 1 forwards;
+  background: rgb(0, 140, 255);
 }
 
 .contact {
@@ -62,29 +62,19 @@
 .lastname:hover,
 .message:hover,
 .email:hover {
-  box-shadow: 0px 0px 0px 5px rgb(255, 140, 255);
+  /* box-shadow: 0px 0px 0px 5px rgb(255, 140, 255); */
+  transform: scale(1.0095)
 }
 
 .firstname:focus,
 .lastname:focus,
 .message:focus,
 .email:focus {
-  box-shadow: 0px 0px 0px 5px rgb(0, 140, 255);
+  border: 5px solid rgb(0,140,255);
 }
 
 .firstname::placeholder,.lastname::placeholder,.message::placeholder,.email::placeholder {
   color: white;
-}
-
-@keyframes border {
-  from {
-    border-radius: 5px;
-    background: transparent;
-  }
-  to {
-    border-radius: 25px;
-    background: rgb(0, 140, 255);
-  }
 }
 
 @media (orientation: portrait) {
