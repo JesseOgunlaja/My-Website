@@ -1,14 +1,21 @@
 import Meta from "@/components/Meta";
 import styles from "@/styles/Contact.module.css";
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const contact = () => {
   const form = useRef();
-  const [submitted, setSubmitted] = useState(document.cookie
-    .split("; ")
-    .find((row) => row.startsWith("authToken="))
-    ?.split("=")[1] == 1 ? true : false);
+  const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const sentFormCookie = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith("sentForm="));
+
+    if (sentFormCookie && sentFormCookie.split("=")[1] === "1") {
+      setSubmitted(true);
+    }
+  }, []);
 
   function submitForm(e) {
     e.preventDefault();
