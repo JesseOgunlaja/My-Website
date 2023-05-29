@@ -83,7 +83,6 @@ const Container = ({ grid, randomiseGrid, reset }) => {
         display: flex;
         flex-direction: column;
         gap:10px;
-        min-width:32vw;
       }
       .card {
         border-radius: 10px;

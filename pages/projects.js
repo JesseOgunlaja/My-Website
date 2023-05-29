@@ -6,7 +6,6 @@ import Meta from "@/components/Meta";
 const projects = () => {
   return (
     <div>
-      <style jsx>{``}</style>
       <Meta title="My Projects" />
       <div className={styles.container}>
         <div className={styles.links}>

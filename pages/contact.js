@@ -46,7 +46,7 @@ const contact = () => {
     <div>
       <Meta title="Contact Me" />
       {submitted ? (
-        <p className={styles.endMessage}>Thanks for submitting this message</p>
+        <p className={styles.endMessage}>Thanks for submitting a message</p>
       ) : (
         <div className={styles.container}>
           <h4 className={styles.contact}>Contact Me</h4>
