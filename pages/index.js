@@ -8,7 +8,7 @@ export default function Home() {
   const [deleting, setDeleting] = useState(false);
   const [languageId, setLanguageId] = useState(0);
   const [stringId, setStringId] = useState(1);
-  const languages = [
+  const [languages] = useState([
     "HTML",
     "CSS",
     "SCSS",
@@ -16,7 +16,7 @@ export default function Home() {
     "TypeScript",
     "React JS",
     "Next JS",
-  ];
+  ]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -54,18 +54,29 @@ export default function Home() {
     <>
       <Meta />
       <style jsx>{`
-        .fa-react,.fa-css3,.fa-code,.fa-js {
-          transform: translateX(0.1px)
+        .fa-react,
+        .fa-css3,
+        .fa-code,
+        .fa-js {
+          transform: translateX(0.1px);
         }
       `}</style>
       <div className={styles.home}>
         <div className={styles.info}>
           <div className={styles.hi}>I'm</div>
-          <h1 className={styles.name}><span>Jesse Ogunlaja</span></h1>
-          <p className={styles.languageBox}>
-            I code <span className={styles.language}>{text}</span>
-            <span className={increment === 1000 ? styles.blink : null}>|</span>
-          </p>
+          <h1 className={styles.name}>
+            <span>Jesse Ogunlaja</span>
+          </h1>
+          <div className={styles.languageBox}>
+            <div className={styles.code}>I code</div>
+            <div>
+              <div className={styles.languages}>
+                {languages.map((language) => (
+                  <span>{language}</span>
+                ))}
+              </div>
+            </div>
+          </div>
           <a className={styles.email} href="mailto:jesseogunlaja@gmail.com">
             <i aria-hidden className="fa fa-envelope fa-gradient"></i>
             <div> jesseogunlaja@gmail.com</div>

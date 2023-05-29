@@ -59,6 +59,48 @@
   display: inline;
 }
 
+.languages span {
+  display: block;
+  font-size: 17.5px
+}
+
+.code {
+  width: 55px;
+}
+
+.languages {
+  position: relative;
+  animation: cycle 5s ease 2s infinite;
+}
+
+.languageBox > div {
+  display: inline-block;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+
+  overflow: hidden;
+
+}
+
+@keyframes cycle {
+  0% {top: 0}
+  7.14285714286% {top: 0}
+  14.2857142857% {top: -20px}
+  21.4285714286% {top: -20px}
+  28.5714285714% {top: -40px;}
+  35.7142857143% {top: -40px;}
+  42.8571428571% {top: -60px;}
+  50% {top: -60px;}
+  57.1428571429% {top: -80px;}
+  64.2857142857% {top: -80px;}
+  71.4285714286% {top: -100px}
+  78.5714285714% {top: -100px}
+  85.7142857143% {top: -120px}
+  92.8571428571% {top: -120px}
+  100% {top: 0px;}
+}
+
 @keyframes blink {
   from {
     color: white;
@@ -105,7 +147,7 @@
   .github div,
   #faGradient,
   .logoTitle,
-  .language {
+  .language,.languages span {
     background: -webkit-linear-gradient(
       45deg,
       rgb(0, 140, 255),
@@ -133,7 +175,7 @@
   .github div,
   .logoTitle,
   .language,
-  #faGradient {
+  #faGradient,.languages span {
     background: -webkit-linear-gradient(
       45deg,
       rgb(0, 140, 255),
