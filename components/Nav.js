@@ -55,14 +55,14 @@ const Nav = () => {
         ]}
       >
         <div className={styles.phoneLinks}>
-          <Link href={"/"}>Home</Link>
-          <Link href={"/projects"}>My Projects</Link>
-          <Link href={"/about"}>About Me</Link>
-          <Link href={"/contact"}>Contact Me</Link>
+          <Link onClick={() => setNavShowing(false)} href={"/"}>Home</Link>
+          <Link onClick={() => setNavShowing(false)} href={"/projects"}>My Projects</Link>
+          <Link onClick={() => setNavShowing(false)} href={"/about"}>About Me</Link>
+          <Link onClick={() => setNavShowing(false)} href={"/contact"}>Contact Me</Link>
         </div>
       </div>
-      {/* )} */}
     </div>
+    
   );
 };
 

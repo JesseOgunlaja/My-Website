@@ -41,7 +41,11 @@
   .aboutMe {
     transform: translateY(35px);
   }
+  .paragraph {
+    width: 80vw;
+  }
   .text {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
   }
 }

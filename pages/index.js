@@ -3,11 +3,6 @@ import { useState, useEffect } from "react";
 import Meta from "@/components/Meta";
 
 export default function Home() {
-  const [increment, setIncrement] = useState(100);
-  const [text, setText] = useState("");
-  const [deleting, setDeleting] = useState(false);
-  const [languageId, setLanguageId] = useState(0);
-  const [stringId, setStringId] = useState(1);
   const [languages] = useState([
     "HTML",
     "CSS",
@@ -17,38 +12,6 @@ export default function Home() {
     "React JS",
     "Next JS",
   ]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (
-        languageId === languages.length &&
-        text.length === 1 &&
-        deleting === false
-      ) {
-        setLanguageId(0);
-        setStringId(1);
-        setText("");
-      } else {
-        let currentText = languages[languageId].slice(0, stringId);
-        setText(currentText);
-        if (stringId < languages[languageId].length && deleting === false) {
-          setStringId(stringId + 1);
-        } else {
-          if (deleting === false) {
-            setIncrement(1000);
-          } else {
-            setIncrement(100);
-          }
-          setDeleting(true);
-          setStringId(stringId - 1);
-          if (stringId === 1) {
-            setLanguageId(languageId + 1);
-            setDeleting(false);
-          }
-        }
-      }
-    }, increment);
-  }, [stringId]);
 
   return (
     <>
