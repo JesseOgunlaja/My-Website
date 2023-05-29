@@ -70,7 +70,6 @@
 
 .languages {
   position: relative;
-  animation: cycle 5s ease 2s infinite;
 }
 
 .languageBox > div {
@@ -157,6 +156,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .languages {
+    animation: cycle 5s ease 2s infinite;
+  }
 }
 
 @media (orientation: portrait) {
@@ -166,6 +168,9 @@
   .info {
     transform: translate(6.5vw, 10vh);
     opacity: 1;
+  }
+  .languages {
+    animation: cycle 5s ease 0s infinite;
   }
   .home {
     height: 105vh;

@@ -5,11 +5,18 @@ import { useRef, useState } from "react";
 
 const contact = () => {
   const form = useRef();
-  const [submitted,setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("authToken="))
+    ?.split("=")[1] == 1 ? true : false);
 
   function submitForm(e) {
     e.preventDefault();
-    setSubmitted(true)
+    const now = new Date();
+    const expires = new Date(now.getTime() + 60 * 60 * 1000);
+    const expiresString = expires.toUTCString();
+    document.cookie = `sentForm=1; expires=${expiresString}; path=/`;
+    setSubmitted(true);
 
     emailjs
       .sendForm(
@@ -32,44 +39,42 @@ const contact = () => {
     <div>
       <Meta title="Contact Me" />
       {submitted ? (
-        <p className={styles.endMessage}>
-          Thanks for submitting this message
-        </p>
+        <p className={styles.endMessage}>Thanks for submitting this message</p>
       ) : (
-      <div className={styles.container}>
-        <h4 className={styles.contact}>Contact Me</h4>
-        <form onSubmit={submitForm} ref={form} className={styles.form}>
-          <div className={styles.name}>
+        <div className={styles.container}>
+          <h4 className={styles.contact}>Contact Me</h4>
+          <form onSubmit={submitForm} ref={form} className={styles.form}>
+            <div className={styles.name}>
+              <input
+                name="first_name"
+                className={styles.firstname}
+                required
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                name="last_name"
+                className={styles.lastname}
+                required
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
             <input
-              name="first_name"
-              className={styles.firstname}
-              required
+              name="email"
+              className={styles.email}
               type="text"
-              placeholder="First Name"
+              placeholder="Email"
             />
-            <input
-              name="last_name"
-              className={styles.lastname}
+            <textarea
+              name="message"
+              placeholder="Your message"
               required
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
-          <input
-            name="email"
-            className={styles.email}
-            type="text"
-            placeholder="Email"
-          />
-          <textarea
-            name="message"
-            placeholder="Your message"
-            required
-            className={styles.message}
-          ></textarea>
-          <input className={styles.submit} type="Submit" />
-        </form>
-      </div>
+              className={styles.message}
+            ></textarea>
+            <input className={styles.submit} type="Submit" />
+          </form>
+        </div>
       )}
     </div>
   );
