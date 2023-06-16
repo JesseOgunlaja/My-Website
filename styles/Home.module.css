@@ -59,47 +59,6 @@
   display: inline;
 }
 
-.languages span {
-  display: block;
-  font-size: 17.5px
-}
-
-.code {
-  width: 55px;
-}
-
-.languages {
-  position: relative;
-}
-
-.languageBox > div {
-  display: inline-block;
-  text-align: left;
-  height: 20px;
-  line-height: 20px;
-
-  overflow: hidden;
-
-}
-
-@keyframes cycle {
-  0% {top: 0}
-  7.14285714286% {top: 0}
-  14.2857142857% {top: -20px}
-  21.4285714286% {top: -20px}
-  28.5714285714% {top: -40px;}
-  35.7142857143% {top: -40px;}
-  42.8571428571% {top: -60px;}
-  50% {top: -60px;}
-  57.1428571429% {top: -80px;}
-  64.2857142857% {top: -80px;}
-  71.4285714286% {top: -100px}
-  78.5714285714% {top: -100px}
-  85.7142857143% {top: -120px}
-  92.8571428571% {top: -120px}
-  100% {top: 0px;}
-}
-
 @keyframes blink {
   from {
     color: white;
@@ -132,9 +91,6 @@
 }
 
 @media (orientation: landscape) {
-  .languageBox {
-    margin-bottom: 5px;
-  }
   .actualLogo {
     animation: moveLogo 0.75s ease-in-out 1 forwards;
   }
@@ -146,7 +102,7 @@
   .github div,
   #faGradient,
   .logoTitle,
-  .language,.languages span {
+  .language {
     background: -webkit-linear-gradient(
       45deg,
       rgb(0, 140, 255),
@@ -155,9 +111,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .languages {
-    animation: cycle 5s ease 2s infinite;
   }
 }
 
@@ -169,9 +122,6 @@
     transform: translate(6.5vw, 10vh);
     opacity: 1;
   }
-  .languages {
-    animation: cycle 5s ease 0s infinite;
-  }
   .home {
     height: 105vh;
   }
@@ -180,7 +130,7 @@
   .github div,
   .logoTitle,
   .language,
-  #faGradient,.languages span {
+  #faGradient {
     background: -webkit-linear-gradient(
       45deg,
       rgb(0, 140, 255),
