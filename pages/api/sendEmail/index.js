@@ -1,9 +1,30 @@
 const nodemailer = require("nodemailer")
 
-export default function handler(req, res) {
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
+
+const redis = new Redis({
+  url: process.env.REDIS_URL || "",
+  token: process.env.REDIS_TOKEN || "",
+});
+
+const ratelimit = new Ratelimit({
+  redis: redis,
+  limiter: Ratelimit.slidingWindow(1, "1 h"),
+});
+
+export default async function handler(req, res) {
+  const ip = request.ip ?? "127.0.0.1";
+      const { success } =
+        await ratelimit.limit(ip);
+
+      if (!success) {
+        return res.status(429).json({ message: `Too many requests from this IP` });
+      }
   try {
     const transporter = nodemailer.createTransport({
       service: "gmail",
+      secure: true,
       auth: {
         user: "noreply4313@gmail.com",
         pass: process.env.GMAIL_PASSWORD,
@@ -18,13 +39,7 @@ export default function handler(req, res) {
       text: req.body.message,
     };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("Email sent");
-      }
-    });
+    await transporter.sendMail(mailOptions);
     res.status(200).json({ message: "Message sent successfully" });
   } catch (err) {
     res.status(400).json({ message: `${err}` });
