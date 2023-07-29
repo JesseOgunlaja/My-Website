@@ -17,29 +17,22 @@ const contact = () => {
     }
   }, []);
 
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
-    const now = new Date();
-    const expires = new Date(now.getTime() + 60 * 60 * 1000);
-    const expiresString = expires.toUTCString();
-    document.cookie = `sentForm=1; expires=${expiresString}; path=/`;
+    const formData = new FormData(e.currentTarget);
+    const formValues = Object.fromEntries(formData.entries());
     setSubmitted(true);
-
-    emailjs
-      .sendForm(
-        "service_qt8bik7",
-        "template_ck5qh7r",
-        form.current,
-        "SWBcr0pFf3wH4zk_K"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    await fetch("/api/sendEmail", {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: formValues.email,
+        name: `${formValues.firstname} ${formValues.lastname}`,
+        message: formValues.message
+      })
+    })
   }
 
   return (
@@ -53,14 +46,14 @@ const contact = () => {
           <form onSubmit={submitForm} ref={form} className={styles.form}>
             <div className={styles.name}>
               <input
-                name="first_name"
+                name="firstname"
                 className={styles.firstname}
                 required
                 type="text"
                 placeholder="First Name"
               />
               <input
-                name="last_name"
+                name="lastname"
                 className={styles.lastname}
                 required
                 type="text"
