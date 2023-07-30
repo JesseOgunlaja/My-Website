@@ -1,7 +1,8 @@
-const nodemailer = require("nodemailer")
+const nodemailer = require("nodemailer");
 
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
+import { NextResponse } from "next/server";
 
 const redis = new Redis({
   url: process.env.REDIS_URL,
@@ -13,15 +14,18 @@ const ratelimit = new Ratelimit({
   limiter: Ratelimit.slidingWindow(1, "1 h"),
 });
 
-export default async function handler(req, res) {
-  const ip = request.ip ?? "127.0.0.1";
-      const { success } =
-        await ratelimit.limit(ip);
-
-      if (!success) {
-        return res.status(429).json({ message: `Too many requests from this IP` });
-      }
+export async function POST(req) {
   try {
+    const body = await req.json();
+
+    const ip = request.ip ?? "127.0.0.1";
+    const { success } = await ratelimit.limit(ip);
+
+    if (!success) {
+      return res
+        .status(429)
+        .json({ message: `Too many requests from this IP` });
+    }
     const transporter = nodemailer.createTransport({
       service: "gmail",
       secure: true,
@@ -34,14 +38,17 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: "noreply4313@gmail.com",
       to: "jesseogunlaja@gmail.com",
-      replyTo: req.body.email,
-      subject: req.body.name,
-      text: req.body.message,
+      replyTo: body.email,
+      subject: body.name,
+      text: body.message,
     };
 
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: "Message sent successfully" });
+    return NextResponse.json(
+      { message: "Message sent successfully" },
+      { status: 200 }
+    );
   } catch (err) {
-    res.status(400).json({ message: `${err}` });
+    return NextResponse.json({ message: `${err}` }, { status: 400 });
   }
 }
