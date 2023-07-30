@@ -16,17 +16,16 @@ const ratelimit = new Ratelimit({
 export default async function handler(req, res) {
   if(req.method === "POST") {
 
-    const ip = req.ip ?? "127.0.0.1";
-    const { success } =
-        await ratelimit.limit(ip);
+    // const ip = req.ip ?? "127.0.0.1";
+    // const { success } =
+    //     await ratelimit.limit(ip);
         
-        if (!success) {
-        return res.status(429).json({ message: `Too many requests from this IP` });
-      }
+    //     if (!success) {
+    //     return res.status(429).json({ message: `Too many requests from this IP` });
+    //   }
   try {
     const transporter = nodemailer.createTransport({
       service: "gmail",
-      secure: true,
       auth: {
         user: "noreply4313@gmail.com",
         pass: process.env.GMAIL_PASSWORD,
