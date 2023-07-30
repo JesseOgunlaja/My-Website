@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from "react";
 
 const contact = () => {
   const form = useRef();
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState("");
 
   useEffect(() => {
     const sentFormCookie = document.cookie
@@ -22,7 +22,7 @@ const contact = () => {
     const formData = new FormData(e.currentTarget);
     const formValues = Object.fromEntries(formData.entries());
     setSubmitted(true);
-    await fetch("/api/sendEmail", {
+    const res = await fetch("/api/sendEmail", {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -33,13 +33,20 @@ const contact = () => {
         message: formValues.message
       })
     })
+    const data = await res.json()
+    if(data.message === "Too many requests from this IP") {
+      setSubmitted("Only 1 request per hour")
+    }
+    else {
+      setSubmitted("Thanks for submitting a message")
+    }
   }
 
   return (
     <div>
       <Meta title="Contact Me" />
-      {submitted ? (
-        <p className={styles.endMessage}>Thanks for submitting a message</p>
+      {submitted !== "" ? (
+        <p className={styles.endMessage}>{submitted}</p>
       ) : (
         <div className={styles.container}>
           <h4 className={styles.contact}>Contact Me</h4>
