@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "powershell next dev --turbopack",
+    "build": "powershell next build",
+    "start": "powershell next start",
+    "lint": "powershell next lint"
   },
   "dependencies": {
     "react": "^19.0.0",
