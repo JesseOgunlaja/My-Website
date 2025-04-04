@@ -36,6 +36,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className}`}>
         <Analytics />
+        <link
+          rel="icon"
+          href="/favicon.svg"
+          sizes="any"
+          type="image/svg+xml"
+        ></link>
         {children}
       </body>
     </html>
