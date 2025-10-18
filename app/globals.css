@@ -1,86 +1,86 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  /* overflow-x: hidden !important; */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	color: #111 !important;
+	/* overflow-x: hidden !important; */
 }
 
 body,
 html {
-  overflow-x: hidden !important;
+	overflow-x: hidden !important;
 }
 
 body {
-  background: #f9f5f2;
-  color: #111;
-  width: 100%;
-  scrollbar-gutter: stable;
+	background: #f9f5f2;
+	width: 100%;
+	scrollbar-gutter: stable;
 }
 
 .page {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .page > a {
-  color: #111;
-  text-decoration: none;
-  font-size: 27.5px;
-  padding: 12.5px 25px;
-  border: 1px solid #111;
-  border-radius: 100px;
-  margin-bottom: 50px;
+	text-decoration: none;
+	font-size: 22.5px;
+	padding: 11px 28px;
+	border: 1px solid #111;
+	border-radius: 100px;
+	margin-bottom: 50px;
 }
 
 .page > p {
-  font-weight: 500;
-  font-size: 50px;
-  text-align: center;
-  margin: 20px 0;
+	font-weight: 500;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 17.5px;
 }
 
-.page > *:not(a):not(p) {
-  padding-left: 90px !important;
+.page > *:not(a):not(p) section:first-child {
+	padding-left: 90px !important;
 }
 
 @media (width < 900px) {
-  .page > *:not(a):not(p) {
-    padding-left: 60px !important;
-  }
-  .page > p {
-    font-size: 40px;
-  }
+	.page > *:not(a):not(p) {
+		padding-left: 60px !important;
+	}
+	.page > p {
+		font-size: 40px;
+	}
 }
 
 @media (width < 725px) {
-  .page > p {
-    font-size: 30px;
-  }
+	.page > p {
+		font-size: 30px;
+	}
 }
 
 @media (width < 550px) {
-  .page > *:not(a):not(p) {
-    padding-left: 40px !important;
-  }
-  .page nav,
-  .page section {
-    padding-right: 40px !important;
-  }
+	.page > *:not(a):not(p) {
+		padding-left: 40px !important;
+	}
+	.page nav,
+	.page section {
+		padding-right: 40px !important;
+	}
 
-  .page > p {
-    font-size: 25px;
-  }
+	.page > p {
+		font-size: 25px;
+	}
 }
 
 @media (width < 450px) {
-  .page > *:not(a):not(p) {
-    padding-left: 20px !important;
-  }
-  .page nav,
-  .page section {
-    padding-right: 20px !important;
-  }
+	.page > *:not(a):not(p) {
+		padding-left: 20px !important;
+	}
+	.page nav,
+	.page section {
+		padding-right: 20px !important;
+	}
 }

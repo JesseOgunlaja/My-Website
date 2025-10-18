@@ -1,171 +1,171 @@
-.main {
-  width: min(100%, 1500px);
-  padding-left: 90px;
-  font-size: 100%;
+.main section:first-child {
+	width: min(100%, 1500px);
+	padding-left: 90px;
+	font-size: 100%;
 }
 
-.main p:first-child {
-  --font-size: 85;
-  font-size: calc(var(--font-size) * 1px);
-  font-weight: 500;
-  overflow: hidden;
-  line-height: 1.2;
+.main section:first-child p:first-child {
+	--font-size: 85;
+	font-size: calc(var(--font-size) * 1px);
+	font-weight: 500;
+	overflow: hidden;
+	line-height: 1.2;
 }
 
-.main p:first-child > span {
-  display: block;
-  overflow: hidden;
+.main section:first-child p:first-child > span {
+	display: block;
+	overflow: hidden;
 }
 
-.main p:first-child > span span {
-  position: relative;
-  color: #111;
-  animation: pullUp 0.9s forwards;
+.main section:first-child p:first-child > span span {
+	position: relative;
+	color: #111;
+	animation: pullUp 0.9s forwards;
 }
 
-.main p:first-child > span:first-child span:last-child {
-  position: relative;
-  margin-left: 30px;
-  font-size: calc(var(--font-size) * 0.8px);
+.main section:first-child p:first-child > span:first-child span:last-child {
+	position: relative;
+	margin-left: 30px;
+	font-size: calc(var(--font-size) * 0.8px);
 }
 
-.main p:first-child svg {
-  position: absolute;
-  top: -2.5px;
-  left: -30px;
-  height: 107.5%;
-  animation: spin 9.25s forwards 0.6s;
+.main section:first-child p:first-child svg {
+	position: absolute;
+	top: -2.5px;
+	left: -30px;
+	height: 107.5%;
+	animation: spin 9.25s forwards 0.6s;
 }
 
-.main p:first-child > span:last-of-type span {
-  top: 100px;
-  animation: pullUp 0.9s forwards 0.5s;
+.main section:first-child p:first-child > span:last-of-type span {
+	top: 100px;
+	animation: pullUp 0.9s forwards 0.5s;
 }
 
-.main p:last-child {
-  width: 45%;
-  font-size: 22px;
-  margin-top: 25px;
-  line-height: 1.6;
-  letter-spacing: 1;
-  opacity: 0;
-  animation: fadeIn 0.8s forwards ease 1s;
+.main section:first-child > p:last-of-type {
+	width: 45%;
+	font-size: 22px;
+	margin-top: 25px;
+	line-height: 1.6;
+	letter-spacing: 1;
+	opacity: 0;
+	animation: fadeIn 0.8s forwards ease 1s;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes pullUp {
-  0% {
-    top: 100px;
-  }
-  100% {
-    top: 0px;
-  }
+	0% {
+		top: 100px;
+	}
+	100% {
+		top: 0px;
+	}
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(160deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(160deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
 }
 
 @media (width < 1200px) {
-  .main p:last-child {
-    width: 60%;
-  }
+	.main section:first-child p:last-child {
+		width: 60%;
+	}
 }
 
 @media (width < 1100px) {
-  .main p:first-child {
-    --font-size: 60;
-  }
+	.main section:first-child p:first-child {
+		--font-size: 60;
+	}
 
-  .main p:first-child svg {
-    left: -38.5px;
-  }
+	.main section:first-child p:first-child svg {
+		left: -38.5px;
+	}
 
-  .main p:last-child {
-    width: 70%;
-    font-size: 20px;
-  }
+	.main section:first-child > p:last-of-type {
+		width: 70%;
+		font-size: 20px;
+	}
 }
 
 @media (width < 800px) {
-  .main p:last-child {
-    font-size: 19px;
-    width: 80%;
-  }
+	.main section:first-child > p:last-of-type {
+		font-size: 19px;
+		width: 80%;
+	}
 }
 
 @media (width < 700px) {
-  .main p:first-child {
-    --font-size: 45;
-  }
-  .main p:first-child svg {
-    left: -44px;
-  }
-  .main p:first-child > span:first-child span:last-child {
-    margin-left: 25px;
-  }
+	.main section:first-child p:first-child {
+		--font-size: 45;
+	}
+	.main section:first-child p:first-child svg {
+		left: -44px;
+	}
+	.main section:first-child p:first-child > span:first-child span:last-child {
+		margin-left: 25px;
+	}
 }
 
 @media (width < 550px) {
-  .main p:last-child {
-    font-size: 18px;
-    width: 90%;
-  }
-  .main p:first-child {
-    --font-size: 40;
-  }
-  .main p:first-child svg {
-    left: -46px;
-  }
-  .main p:first-child > span:first-child span:last-child {
-    margin-left: 20px;
-  }
+	.main section:first-child > p:last-of-type {
+		font-size: 18px;
+		width: 90%;
+	}
+	.main section:first-child p:first-child {
+		--font-size: 40;
+	}
+	.main section:first-child p:first-child svg {
+		left: -46px;
+	}
+	.main section:first-child p:first-child > span:first-child span:last-child {
+		margin-left: 20px;
+	}
 }
 
 @media (width < 450px) {
-  .main p:first-child {
-    --font-size: 35;
-  }
-  .main p:first-child svg {
-    left: -47px;
-  }
-  .main p:first-child > span:first-child span:last-child {
-    margin-left: 20px;
-  }
-  .main p:last-child {
-    font-size: 16px;
-    width: 95%;
-  }
+	.main section:first-child p:first-child {
+		--font-size: 35;
+	}
+	.main section:first-child p:first-child svg {
+		left: -47px;
+	}
+	.main section:first-child p:first-child > span:first-child span:last-child {
+		margin-left: 20px;
+	}
+	.main section:first-child > p:last-of-type {
+		font-size: 16px;
+		width: 95%;
+	}
 }
 
 @media (width < 375px) {
-  .main p:first-child {
-    --font-size: 30;
-  }
-  .main p:first-child svg {
-    left: -48.5px;
-  }
-  .main p:first-child > span:first-child span:last-child {
-    margin-left: 15px;
-  }
-  .main p:last-child {
-    font-size: 16px;
-    width: 95%;
-  }
+	.main section:first-child p:first-child {
+		--font-size: 30;
+	}
+	.main section:first-child p:first-child svg {
+		left: -48.5px;
+	}
+	.main section:first-child p:first-child > span:first-child span:last-child {
+		margin-left: 15px;
+	}
+	.main section:first-child > p:last-of-type {
+		font-size: 16px;
+		width: 95%;
+	}
 }
