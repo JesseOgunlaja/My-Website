@@ -18,6 +18,10 @@ body {
 	scrollbar-gutter: stable;
 }
 
+a {
+	text-decoration: none;
+}
+
 .page {
 	width: 100vw;
 	display: flex;
@@ -26,7 +30,6 @@ body {
 }
 
 .page > a {
-	text-decoration: none;
 	font-size: 22.5px;
 	padding: 11px 28px;
 	border: 1px solid #111;
