@@ -1,10 +1,10 @@
-.main section:first-child {
+.hero {
 	width: min(100%, 1500px);
 	padding-left: 90px;
 	font-size: 100%;
 }
 
-.main section:first-child p:first-child {
+.hero h2 {
 	--font-size: 85;
 	font-size: calc(var(--font-size) * 1px);
 	font-weight: 500;
@@ -12,24 +12,24 @@
 	line-height: 1.2;
 }
 
-.main section:first-child p:first-child > span {
+.hero h2 > span {
 	display: block;
 	overflow: hidden;
 }
 
-.main section:first-child p:first-child > span span {
+.hero h2 > span span {
 	position: relative;
 	color: #111;
 	animation: pullUp 0.9s forwards;
 }
 
-.main section:first-child p:first-child > span:first-child span:last-child {
+.hero h2 > span:first-child span:last-child {
 	position: relative;
 	margin-left: 30px;
 	font-size: calc(var(--font-size) * 0.8px);
 }
 
-.main section:first-child p:first-child svg {
+.hero h2 svg {
 	position: absolute;
 	top: -2.5px;
 	left: -30px;
@@ -37,12 +37,12 @@
 	animation: spin 9.25s forwards 0.6s;
 }
 
-.main section:first-child p:first-child > span:last-of-type span {
+.hero h2 > span:last-of-type span {
 	top: 100px;
 	animation: pullUp 0.9s forwards 0.5s;
 }
 
-.main section:first-child > p:last-of-type {
+.hero > p {
 	width: 45%;
 	font-size: 22px;
 	margin-top: 25px;
@@ -83,88 +83,88 @@
 }
 
 @media (width < 1200px) {
-	.main section:first-child p:last-child {
+	.hero p:last-child {
 		width: 60%;
 	}
 }
 
 @media (width < 1100px) {
-	.main section:first-child p:first-child {
+	.hero h2 {
 		--font-size: 60;
 	}
 
-	.main section:first-child p:first-child svg {
+	.hero h2 svg {
 		left: -38.5px;
 	}
 
-	.main section:first-child > p:last-of-type {
+	.hero > p {
 		width: 70%;
 		font-size: 20px;
 	}
 }
 
 @media (width < 800px) {
-	.main section:first-child > p:last-of-type {
+	.hero > p {
 		font-size: 19px;
 		width: 80%;
 	}
 }
 
 @media (width < 700px) {
-	.main section:first-child p:first-child {
+	.hero h2 {
 		--font-size: 45;
 	}
-	.main section:first-child p:first-child svg {
+	.hero h2 svg {
 		left: -44px;
 	}
-	.main section:first-child p:first-child > span:first-child span:last-child {
+	.hero h2 > span:first-child span:last-child {
 		margin-left: 25px;
 	}
 }
 
 @media (width < 550px) {
-	.main section:first-child > p:last-of-type {
+	.hero > p {
 		font-size: 18px;
 		width: 90%;
 	}
-	.main section:first-child p:first-child {
+	.hero h2 {
 		--font-size: 40;
 	}
-	.main section:first-child p:first-child svg {
+	.hero h2 svg {
 		left: -46px;
 	}
-	.main section:first-child p:first-child > span:first-child span:last-child {
+	.hero h2 > span:first-child span:last-child {
 		margin-left: 20px;
 	}
 }
 
 @media (width < 450px) {
-	.main section:first-child p:first-child {
+	.hero h2 {
 		--font-size: 35;
 	}
-	.main section:first-child p:first-child svg {
+	.hero h2 svg {
 		left: -47px;
 	}
-	.main section:first-child p:first-child > span:first-child span:last-child {
+	.hero h2 > span:first-child span:last-child {
 		margin-left: 20px;
 	}
-	.main section:first-child > p:last-of-type {
+	.hero > p {
 		font-size: 16px;
 		width: 95%;
 	}
 }
 
 @media (width < 375px) {
-	.main section:first-child p:first-child {
+	.hero h2 {
 		--font-size: 30;
 	}
-	.main section:first-child p:first-child svg {
+	.hero h2 svg {
 		left: -48.5px;
 	}
-	.main section:first-child p:first-child > span:first-child span:last-child {
+	.hero h2 > span:first-child span:last-child {
 		margin-left: 15px;
 	}
-	.main section:first-child > p:last-of-type {
+	.hero > p {
 		font-size: 16px;
 		width: 95%;
 	}

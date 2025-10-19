@@ -1,0 +1,26 @@
+.cta {
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 22.5px;
+
+	& h2 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	& p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	& a {
+		background: #045ea9;
+		color: white !important;
+		padding: 12.5px 20px;
+		border-radius: 7.5px;
+		font-weight: 500;
+	}
+}

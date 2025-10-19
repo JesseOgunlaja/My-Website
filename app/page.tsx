@@ -7,8 +7,6 @@ export default function Home() {
 		<div className="page">
 			<Navbar />
 			<Main />
-			<p>Looking for a Fullstack Developer?</p>
-			<Link href="mailto:jesse@jesseogu.dev">GET IN TOUCH</Link>
 		</div>
 	);
 }

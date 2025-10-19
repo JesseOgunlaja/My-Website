@@ -8,9 +8,9 @@ export default function Projects() {
 	const height = 1 * multiplier;
 
 	return (
-		<section className={styles.projectSection}>
+		<section className={styles.projects}>
 			<h2>My Projects</h2>
-			<div className={styles.projects}>
+			<div className={styles.projectsList}>
 				<article>
 					<Link href="https://harmoni.jesseogu.dev" target="_blank">
 						<h3>Harmoni</h3>
@@ -20,6 +20,9 @@ export default function Projects() {
 							alt="Harmoni"
 							width={width}
 							height={height}
+							loading="eager"
+							priority
+							quality={100}
 						/>
 					</Link>
 				</article>
@@ -32,6 +35,9 @@ export default function Projects() {
 							alt="Shrinkr"
 							width={width}
 							height={height}
+							loading="eager"
+							priority
+							quality={100}
 						/>
 					</Link>
 				</article>
@@ -47,6 +53,9 @@ export default function Projects() {
 							alt="Streamthing"
 							width={width}
 							height={height}
+							loading="eager"
+							priority
+							quality={100}
 						/>
 					</Link>
 				</article>
