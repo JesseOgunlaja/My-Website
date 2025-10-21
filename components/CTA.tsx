@@ -6,8 +6,8 @@ export default function CTA() {
 		<section className={styles.cta}>
 			<h2>Looking for a Fullstack Developer?</h2>
 			<p>
-				Turning ideas into fully functioning <br /> applications, from initial
-				concept to final deployment.
+				Turning ideas into fully functioning applications, from initial concept
+				to final deployment.
 			</p>
 			<Link href="mailto:jesse@jesseogu.dev">
 				Ready to bring your ideas to life?

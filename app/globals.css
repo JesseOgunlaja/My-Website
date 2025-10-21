@@ -14,7 +14,6 @@ html {
 
 body {
 	background: #f9f5f2;
-	width: 100%;
 	scrollbar-gutter: stable;
 }
 
@@ -27,6 +26,10 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.page main {
+	width: 100%;
 }
 
 .page > a {
@@ -45,14 +48,7 @@ a {
 	margin-bottom: 17.5px;
 }
 
-.page > *:not(a):not(p) section:first-child {
-	padding-left: 90px !important;
-}
-
 @media (width < 900px) {
-	.page > *:not(a):not(p) {
-		padding-left: 60px !important;
-	}
 	.page > p {
 		font-size: 40px;
 	}
@@ -65,12 +61,10 @@ a {
 }
 
 @media (width < 550px) {
-	.page > *:not(a):not(p) {
-		padding-left: 40px !important;
-	}
 	.page nav,
 	.page section {
 		padding-right: 40px !important;
+		padding-left: 40px !important;
 	}
 
 	.page > p {
@@ -79,11 +73,9 @@ a {
 }
 
 @media (width < 450px) {
-	.page > *:not(a):not(p) {
-		padding-left: 20px !important;
-	}
 	.page nav,
 	.page section {
 		padding-right: 20px !important;
+		padding-left: 20px !important;
 	}
 }

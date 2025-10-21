@@ -97,9 +97,15 @@
 		left: -38.5px;
 	}
 
-	.hero > p {
+	.hero p:last-child {
 		width: 70%;
 		font-size: 20px;
+	}
+}
+
+@media (width < 900px) {
+	.hero {
+		padding-left: 60px;
 	}
 }
 
@@ -123,7 +129,10 @@
 }
 
 @media (width < 550px) {
-	.hero > p {
+	.hero {
+		padding-left: 40px;
+	}
+	.hero p:last-child {
 		font-size: 18px;
 		width: 90%;
 	}
@@ -139,6 +148,9 @@
 }
 
 @media (width < 450px) {
+	.hero {
+		padding-left: 20px;
+	}
 	.hero h2 {
 		--font-size: 35;
 	}

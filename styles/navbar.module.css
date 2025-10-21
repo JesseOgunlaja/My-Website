@@ -1,65 +1,84 @@
 .navbar {
-  width: 100%;
-  margin-bottom: 140px;
-  width: min(100%, 1500px);
-  padding: 45px 70px;
-  padding-left: 90px;
+	width: 100%;
+	margin-bottom: 140px;
+	width: min(100%, 1500px);
+	padding: 45px 70px;
+	padding-left: 90px;
 }
 
 .navbar ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .navbar ul li {
-  opacity: 0;
+	opacity: 0;
 }
 
 .navbar ul li:nth-child(1) {
-  animation: fadeIn 0.8s forwards 0.7s;
+	animation: fadeIn 0.8s forwards 0.7s;
 }
 
 .navbar ul li:nth-child(2) {
-  animation: fadeIn 0.8s forwards 1s;
+	animation: fadeIn 0.8s forwards 1s;
 }
 
 .navbar ul li h1 {
-  font-size: 25px;
-  font-weight: 500;
+	font-size: 25px;
+	font-weight: 500;
 }
 
 .navbar ul li a {
-  color: #111 !important;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px 19px;
-  border: 1px solid #111;
-  border-radius: 100px;
+	color: #111 !important;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 19px;
+	border: 1px solid #111;
+	border-radius: 100px;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (width < 900px) {
+	.navbar {
+		padding-left: 60px;
+	}
 }
 
 @media (width < 700px) {
-  .navbar {
-    margin-bottom: 80px;
-  }
+	.navbar {
+		padding-left: 60px;
+		margin-bottom: 80px;
+	}
+}
+
+@media (width < 550px) {
+	.navbar {
+		padding-left: 40px;
+	}
 }
 
 @media (width < 500px) {
-  .navbar ul li a {
-    font-size: 16px;
-  }
+	.navbar ul li a {
+		font-size: 16px;
+	}
 
-  .navbar ul li h1 {
-    font-size: 20px;
-  }
+	.navbar ul li h1 {
+		font-size: 20px;
+	}
+}
+
+@media (width < 450px) {
+	.navbar {
+		padding-left: 20px;
+	}
 }
